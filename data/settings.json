@@ -1,0 +1,18 @@
+[
+  {
+    "key": "auto_backup_interval",
+    "value": "30"
+  },
+  {
+    "key": "auto_backup_retention",
+    "value": "20"
+  },
+  {
+    "key": "github_token",
+    "value": ""
+  },
+  {
+    "key": "github_repo",
+    "value": "gigacomputers2025-bot/Supremas"
+  }
+]

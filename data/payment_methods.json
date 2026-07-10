@@ -1,0 +1,37 @@
+[
+  {
+    "id": 15,
+    "name": "Transferencia",
+    "commission_rate": 0.9
+  },
+  {
+    "id": 16,
+    "name": "QR AL RECIBIR",
+    "commission_rate": 0.9
+  },
+  {
+    "id": 17,
+    "name": "Nave",
+    "commission_rate": 0.925
+  },
+  {
+    "id": 18,
+    "name": "Cuenta DNI",
+    "commission_rate": 0.942
+  },
+  {
+    "id": 19,
+    "name": "Efectivo",
+    "commission_rate": 0.85
+  },
+  {
+    "id": 20,
+    "name": "EFVO",
+    "commission_rate": 0.9
+  },
+  {
+    "id": 21,
+    "name": "MP",
+    "commission_rate": 0.87
+  }
+]

@@ -2,6 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
+// GitHub Pages mode: intercept /api/* fetch calls and route through GitHub API
+(async () => {
+  if (import.meta.env.VITE_GITHUB_MODE) {
+    const { githubApiFetch } = await import('./github-api-fetch');
+    const origFetch = window.fetch;
+    window.fetch = async (input, init) => {
+      const url = typeof input === 'string' ? input : input instanceof Request ? input.url : '';
+      if (url.startsWith('/api/') || url.startsWith('api/')) {
+        return githubApiFetch(url.startsWith('api/') ? '/' + url : url, init);
+      }
+      return origFetch(input, init);
+    };
+  }
+})();
+
 const style = document.createElement('style');
 style.textContent = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

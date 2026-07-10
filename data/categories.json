@@ -1,0 +1,46 @@
+[
+  {
+    "id": 23,
+    "name": "CERDO"
+  },
+  {
+    "id": 24,
+    "name": "MILANESA"
+  },
+  {
+    "id": 25,
+    "name": "HAMBURGUESA"
+  },
+  {
+    "id": 26,
+    "name": "CONGELADOS"
+  },
+  {
+    "id": 27,
+    "name": "POLLO"
+  },
+  {
+    "id": 28,
+    "name": "HUEVO"
+  },
+  {
+    "id": 29,
+    "name": "VERDURA"
+  },
+  {
+    "id": 30,
+    "name": "CARNE"
+  },
+  {
+    "id": 31,
+    "name": "PROMOCION"
+  },
+  {
+    "id": 32,
+    "name": "MILANESAS"
+  },
+  {
+    "id": 33,
+    "name": "PREPARADOS"
+  }
+]

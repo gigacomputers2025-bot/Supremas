@@ -1,0 +1,983 @@
+[
+  {
+    "id": 219,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "COST DE CERDO",
+    "sigla": "COST DE CERDO X 1",
+    "is_combo": 0,
+    "sort_order": 6
+  },
+  {
+    "id": 220,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "COST DE CERDO",
+    "sigla": "COST DE CERDOX 3",
+    "is_combo": 0,
+    "sort_order": 7
+  },
+  {
+    "id": 221,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "SOLOMILLO",
+    "sigla": "SOLO X 1",
+    "is_combo": 0,
+    "sort_order": 8
+  },
+  {
+    "id": 222,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "SOLOMILLO",
+    "sigla": "SOLO X 3",
+    "is_combo": 0,
+    "sort_order": 9
+  },
+  {
+    "id": 223,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "BONDIOLA",
+    "sigla": "B/B X 1",
+    "is_combo": 0,
+    "sort_order": 10
+  },
+  {
+    "id": 224,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "BONDIOLA",
+    "sigla": "B/B X 3",
+    "is_combo": 0,
+    "sort_order": 11
+  },
+  {
+    "id": 225,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "CARRE",
+    "sigla": "CARRE X 1",
+    "is_combo": 0,
+    "sort_order": 12
+  },
+  {
+    "id": 226,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "CARRE",
+    "sigla": "CARRE X 3",
+    "is_combo": 0,
+    "sort_order": 13
+  },
+  {
+    "id": 227,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "CHURRASQUITO",
+    "sigla": "CHURR. DE CERDO X 1",
+    "is_combo": 0,
+    "sort_order": 14
+  },
+  {
+    "id": 228,
+    "list_type": "Minorista",
+    "category": "CERDO",
+    "name": "CHURRASQUITO",
+    "sigla": "CHURR. DE CERDO X 3",
+    "is_combo": 0,
+    "sort_order": 15
+  },
+  {
+    "id": 229,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE POLLO",
+    "sigla": "M/P X 1",
+    "is_combo": 0,
+    "sort_order": 16
+  },
+  {
+    "id": 230,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE POLLO",
+    "sigla": "M/P X 3",
+    "is_combo": 0,
+    "sort_order": 17
+  },
+  {
+    "id": 231,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE POLLO CON PROV",
+    "sigla": "M/P/P X 1",
+    "is_combo": 0,
+    "sort_order": 18
+  },
+  {
+    "id": 232,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE POLLO CON PROV",
+    "sigla": "M/P/P X 3",
+    "is_combo": 0,
+    "sort_order": 19
+  },
+  {
+    "id": 233,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE NALGA",
+    "sigla": "M/C X 1",
+    "is_combo": 0,
+    "sort_order": 20
+  },
+  {
+    "id": 234,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE NALGA",
+    "sigla": "M/C X 3",
+    "is_combo": 0,
+    "sort_order": 21
+  },
+  {
+    "id": 235,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE NALGA CON PROV",
+    "sigla": "M/C/P X 1",
+    "is_combo": 0,
+    "sort_order": 22
+  },
+  {
+    "id": 236,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE NALGA CON PROV",
+    "sigla": "M/C/P X 3",
+    "is_combo": 0,
+    "sort_order": 23
+  },
+  {
+    "id": 237,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE PECETO",
+    "sigla": "M/PEC X 1",
+    "is_combo": 0,
+    "sort_order": 24
+  },
+  {
+    "id": 238,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILA DE PECETO",
+    "sigla": "M/PEC X 3",
+    "is_combo": 0,
+    "sort_order": 25
+  },
+  {
+    "id": 239,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE POLLO",
+    "sigla": "H/P X 1",
+    "is_combo": 0,
+    "sort_order": 26
+  },
+  {
+    "id": 240,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE POLLO",
+    "sigla": "H/P X 3",
+    "is_combo": 0,
+    "sort_order": 27
+  },
+  {
+    "id": 241,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE POLLO C/ESP",
+    "sigla": "H/P/E X 1",
+    "is_combo": 0,
+    "sort_order": 28
+  },
+  {
+    "id": 242,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE POLLO C/ESP",
+    "sigla": "H/P/E X 3",
+    "is_combo": 0,
+    "sort_order": 29
+  },
+  {
+    "id": 243,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE POLLO C/MORRON",
+    "sigla": "H/P/M X 1",
+    "is_combo": 0,
+    "sort_order": 30
+  },
+  {
+    "id": 244,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE POLLO C/MORRON",
+    "sigla": "H/P/M X 3",
+    "is_combo": 0,
+    "sort_order": 31
+  },
+  {
+    "id": 245,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE CARNE CON MORRON",
+    "sigla": "H/C X 1",
+    "is_combo": 0,
+    "sort_order": 32
+  },
+  {
+    "id": 246,
+    "list_type": "Minorista",
+    "category": "HAMBURGUESA",
+    "name": "HAMB DE CARNE CON MORRON",
+    "sigla": "H/C X 3",
+    "is_combo": 0,
+    "sort_order": 33
+  },
+  {
+    "id": 247,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "MC CAIN",
+    "sigla": "PAPAS X 1",
+    "is_combo": 0,
+    "sort_order": 34
+  },
+  {
+    "id": 248,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "MC CAIN",
+    "sigla": "PAPAS X 2,5",
+    "is_combo": 0,
+    "sort_order": 35
+  },
+  {
+    "id": 249,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "NUGGETS",
+    "sigla": "NUGGETS X 1",
+    "is_combo": 0,
+    "sort_order": 36
+  },
+  {
+    "id": 250,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "NUGGETS",
+    "sigla": "NUGGETS X 3",
+    "is_combo": 0,
+    "sort_order": 37
+  },
+  {
+    "id": 251,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "BOCADITO",
+    "sigla": "BOCA X 1",
+    "is_combo": 0,
+    "sort_order": 38
+  },
+  {
+    "id": 252,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "BOCADITO",
+    "sigla": "BOCA X 3",
+    "is_combo": 0,
+    "sort_order": 39
+  },
+  {
+    "id": 253,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "POCHOCLO",
+    "sigla": "POCHO X 1",
+    "is_combo": 0,
+    "sort_order": 40
+  },
+  {
+    "id": 254,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "POCHOCLO",
+    "sigla": "POCHO X 3",
+    "is_combo": 0,
+    "sort_order": 41
+  },
+  {
+    "id": 255,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "RICOSAURIO",
+    "sigla": "RICO X 1",
+    "is_combo": 0,
+    "sort_order": 42
+  },
+  {
+    "id": 256,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "RICOSAURIO",
+    "sigla": "RICO X 3",
+    "is_combo": 0,
+    "sort_order": 43
+  },
+  {
+    "id": 257,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "CRISPY",
+    "sigla": "CRISPY X 1",
+    "is_combo": 0,
+    "sort_order": 44
+  },
+  {
+    "id": 258,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "CRISPY",
+    "sigla": "CRISPY X 3",
+    "is_combo": 0,
+    "sort_order": 45
+  },
+  {
+    "id": 259,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "MEDALLONES",
+    "sigla": "MEDA   X 1",
+    "is_combo": 0,
+    "sort_order": 46
+  },
+  {
+    "id": 260,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "MEDALLONES",
+    "sigla": "MEDA X 3",
+    "is_combo": 0,
+    "sort_order": 47
+  },
+  {
+    "id": 261,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "PATA  DESHUESADA",
+    "sigla": "P/D X 1",
+    "is_combo": 0,
+    "sort_order": 48
+  },
+  {
+    "id": 262,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "PATA  DESHUESADA",
+    "sigla": "P/D X 3",
+    "is_combo": 0,
+    "sort_order": 49
+  },
+  {
+    "id": 263,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "BOCADITO DE ESPINACA",
+    "sigla": "BOCA ESP X 1",
+    "is_combo": 0,
+    "sort_order": 50
+  },
+  {
+    "id": 264,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "BOCADITO DE CALABAZA",
+    "sigla": "BOCA CALA X 1",
+    "is_combo": 0,
+    "sort_order": 51
+  },
+  {
+    "id": 265,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "POLLO ENTERO",
+    "sigla": "POLLO X 1 UN",
+    "is_combo": 0,
+    "sort_order": 52
+  },
+  {
+    "id": 266,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS",
+    "sigla": "SUPRE X 1",
+    "is_combo": 0,
+    "sort_order": 53
+  },
+  {
+    "id": 267,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS",
+    "sigla": "SUPRE X 3",
+    "is_combo": 0,
+    "sort_order": 54
+  },
+  {
+    "id": 268,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS",
+    "sigla": "SUPRE X 5",
+    "is_combo": 0,
+    "sort_order": 55
+  },
+  {
+    "id": 269,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS",
+    "sigla": "SUPRE X 10",
+    "is_combo": 0,
+    "sort_order": 56
+  },
+  {
+    "id": 270,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS",
+    "sigla": "SUPRE X 15",
+    "is_combo": 0,
+    "sort_order": 57
+  },
+  {
+    "id": 271,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS",
+    "sigla": "SUPRE X 20",
+    "is_combo": 0,
+    "sort_order": 58
+  },
+  {
+    "id": 272,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS MAYORISTA",
+    "sigla": "SUPRE MAYO X 15",
+    "is_combo": 0,
+    "sort_order": 59
+  },
+  {
+    "id": 273,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS MAYORISTA",
+    "sigla": "SUPRE MAYO X 20",
+    "is_combo": 0,
+    "sort_order": 60
+  },
+  {
+    "id": 274,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS MAYORISTA",
+    "sigla": "SUPRE MAYO X 25",
+    "is_combo": 0,
+    "sort_order": 61
+  },
+  {
+    "id": 275,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS MAYORISTA",
+    "sigla": "SUPRE MAYO X 30",
+    "is_combo": 0,
+    "sort_order": 62
+  },
+  {
+    "id": 276,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPREMAS MAYORISTA",
+    "sigla": "SUPRE MAYO X 35",
+    "is_combo": 0,
+    "sort_order": 63
+  },
+  {
+    "id": 277,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PATA MUSLO",
+    "sigla": "PATA Y MUSLO X 1",
+    "is_combo": 0,
+    "sort_order": 64
+  },
+  {
+    "id": 278,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PATA MUSLO",
+    "sigla": "PATA Y MUSLO X 3",
+    "is_combo": 0,
+    "sort_order": 65
+  },
+  {
+    "id": 279,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PATA MUSLO",
+    "sigla": "PATA Y MUSLO X 5",
+    "is_combo": 0,
+    "sort_order": 66
+  },
+  {
+    "id": 280,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PATA MUSLO",
+    "sigla": "PATA Y MUSLO X 10",
+    "is_combo": 0,
+    "sort_order": 67
+  },
+  {
+    "id": 281,
+    "list_type": "Minorista",
+    "category": "HUEVO",
+    "name": "HUEVO",
+    "sigla": "1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 68
+  },
+  {
+    "id": 282,
+    "list_type": "Minorista",
+    "category": "HUEVO",
+    "name": "HUEVO",
+    "sigla": "6 MAPLES",
+    "is_combo": 0,
+    "sort_order": 69
+  },
+  {
+    "id": 283,
+    "list_type": "Minorista",
+    "category": "HUEVO",
+    "name": "HUEVO",
+    "sigla": "12 MAPLES",
+    "is_combo": 0,
+    "sort_order": 70
+  },
+  {
+    "id": 284,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PATA",
+    "sigla": "PATA X 1",
+    "is_combo": 0,
+    "sort_order": 71
+  },
+  {
+    "id": 285,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PATA",
+    "sigla": "PATA X 3",
+    "is_combo": 0,
+    "sort_order": 72
+  },
+  {
+    "id": 286,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "MUSLO",
+    "sigla": "MUSLO X 1",
+    "is_combo": 0,
+    "sort_order": 73
+  },
+  {
+    "id": 287,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "MUSLO",
+    "sigla": "MUSLO X 3",
+    "is_combo": 0,
+    "sort_order": 74
+  },
+  {
+    "id": 288,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPRE FILETEADA",
+    "sigla": "FILETEADA X 1",
+    "is_combo": 0,
+    "sort_order": 75
+  },
+  {
+    "id": 289,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPRE FILETEADA",
+    "sigla": "FILETEADA X 3",
+    "is_combo": 0,
+    "sort_order": 76
+  },
+  {
+    "id": 290,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPRE EN DADOS",
+    "sigla": "EN DADO X 1",
+    "is_combo": 0,
+    "sort_order": 77
+  },
+  {
+    "id": 291,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPRE EN DADOS",
+    "sigla": "EN DADO X 3",
+    "is_combo": 0,
+    "sort_order": 78
+  },
+  {
+    "id": 292,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPRE EN TIRAS",
+    "sigla": "SUPRE EN TIRAS X 1",
+    "is_combo": 0,
+    "sort_order": 79
+  },
+  {
+    "id": 293,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "SUPRE EN TIRAS",
+    "sigla": "SUPRE EN TIRAS  X 3",
+    "is_combo": 0,
+    "sort_order": 80
+  },
+  {
+    "id": 294,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "ALITAS",
+    "sigla": "ALITAS X 3",
+    "is_combo": 0,
+    "sort_order": 81
+  },
+  {
+    "id": 295,
+    "list_type": "Minorista",
+    "category": "VERDURA",
+    "name": "WOK",
+    "sigla": "WOK X 1",
+    "is_combo": 0,
+    "sort_order": 82
+  },
+  {
+    "id": 296,
+    "list_type": "Minorista",
+    "category": "VERDURA",
+    "name": "TARTA",
+    "sigla": "TARTA X 1",
+    "is_combo": 0,
+    "sort_order": 83
+  },
+  {
+    "id": 297,
+    "list_type": "Minorista",
+    "category": "VERDURA",
+    "name": "BROCOLI",
+    "sigla": "BROCOLI X 1",
+    "is_combo": 0,
+    "sort_order": 84
+  },
+  {
+    "id": 298,
+    "list_type": "Minorista",
+    "category": "VERDURA",
+    "name": "ESPINACA",
+    "sigla": "ESPINACA X 1",
+    "is_combo": 0,
+    "sort_order": 85
+  },
+  {
+    "id": 299,
+    "list_type": "Minorista",
+    "category": "CARNE",
+    "name": "LOMO",
+    "sigla": "LOMO X 1",
+    "is_combo": 0,
+    "sort_order": 86
+  },
+  {
+    "id": 300,
+    "list_type": "Minorista",
+    "category": "CARNE",
+    "name": "NALGA",
+    "sigla": "NALGA FILET. X 1",
+    "is_combo": 0,
+    "sort_order": 87
+  },
+  {
+    "id": 301,
+    "list_type": "Minorista",
+    "category": "CARNE",
+    "name": "NALGA",
+    "sigla": "NALGA TIRAS. X 1",
+    "is_combo": 0,
+    "sort_order": 88
+  },
+  {
+    "id": 302,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 1",
+    "sigla": "(P.1) 5 SUPRE, 1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 89
+  },
+  {
+    "id": 303,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 2",
+    "sigla": "(P.3) 5 SUPRE, 5 PATAMUSLO, 1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 90
+  },
+  {
+    "id": 304,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 5",
+    "sigla": "(P.5) 10 SUPRE, 1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 91
+  },
+  {
+    "id": 305,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO  6",
+    "sigla": "(P.6) 15 SUPRE, 2 MAPLES",
+    "is_combo": 0,
+    "sort_order": 92
+  },
+  {
+    "id": 306,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 7",
+    "sigla": "(P.7) 3 SUPRE, 3 P/D, 3 COST CERDO",
+    "is_combo": 0,
+    "sort_order": 93
+  },
+  {
+    "id": 307,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 9",
+    "sigla": "(P.9) 5 SUPRE, 3 M/P, 1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 94
+  },
+  {
+    "id": 308,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 11",
+    "sigla": "(P.11) 3 M/P, 3 M/C, 1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 95
+  },
+  {
+    "id": 309,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 12",
+    "sigla": "(P.12) 5 SUPRE, 3 COST CERDO, 1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 96
+  },
+  {
+    "id": 310,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 13",
+    "sigla": "(P.13) 5 SUPRE, 3 H/P",
+    "is_combo": 0,
+    "sort_order": 97
+  },
+  {
+    "id": 311,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 14",
+    "sigla": "(P.14) 3 COST CERDO., 3 B/B",
+    "is_combo": 0,
+    "sort_order": 98
+  },
+  {
+    "id": 312,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO 19",
+    "sigla": "(P.19) 3 SUPRE, 1 MAPLE",
+    "is_combo": 0,
+    "sort_order": 99
+  },
+  {
+    "id": 313,
+    "list_type": "Minorista",
+    "category": "CARNE",
+    "name": "LOMO EN CUADRADO",
+    "sigla": "LOMO DADO X 1",
+    "is_combo": 0,
+    "sort_order": 100
+  },
+  {
+    "id": 314,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PICADA DE PECHUGA",
+    "sigla": "SUPRE PICADA X 1",
+    "is_combo": 0,
+    "sort_order": 101
+  },
+  {
+    "id": 315,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "PICADA DE PECHUGA",
+    "sigla": "SUPRE PICADA X 3",
+    "is_combo": 0,
+    "sort_order": 102
+  },
+  {
+    "id": 316,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILANESA CARRE",
+    "sigla": "M/CERDO X 1",
+    "is_combo": 0,
+    "sort_order": 103
+  },
+  {
+    "id": 317,
+    "list_type": "Minorista",
+    "category": "MILANESA",
+    "name": "MILANESA CARRE",
+    "sigla": "M/CERDO X 3",
+    "is_combo": 0,
+    "sort_order": 104
+  },
+  {
+    "id": 318,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO MILANESAS",
+    "sigla": "P.MILA (1 M/P, 1 M/C, 1 M/CERDO)",
+    "is_combo": 0,
+    "sort_order": 105
+  },
+  {
+    "id": 319,
+    "list_type": "Minorista",
+    "category": "PROMOCION",
+    "name": "PROMO PECHUGA",
+    "sigla": "P.PECHUGA (2 SUPRE, 2 DADO, 2 FILET)",
+    "is_combo": 0,
+    "sort_order": 106
+  },
+  {
+    "id": 320,
+    "list_type": "Minorista",
+    "category": "POLLO",
+    "name": "BROCHETTE X 1 KG",
+    "sigla": "BROCHETTE X 1",
+    "is_combo": 0,
+    "sort_order": 107
+  },
+  {
+    "id": 321,
+    "list_type": "Minorista",
+    "category": "MILANESAS",
+    "name": "MILA DE POLLO CON AVENA",
+    "sigla": "M/P/A X 1",
+    "is_combo": 0,
+    "sort_order": 108
+  },
+  {
+    "id": 322,
+    "list_type": "Minorista",
+    "category": "MILANESAS",
+    "name": "MILA DE POLLO CON AVENA",
+    "sigla": "M/P/A X 3",
+    "is_combo": 0,
+    "sort_order": 109
+  },
+  {
+    "id": 323,
+    "list_type": "Minorista",
+    "category": "CONGELADOS",
+    "name": "BASTON MUZA",
+    "sigla": "BASTON X 1",
+    "is_combo": 0,
+    "sort_order": 110
+  },
+  {
+    "id": 324,
+    "list_type": "Minorista",
+    "category": "PREPARADOS",
+    "name": "ALBONDIGAS DE CARNE",
+    "sigla": "ALBON. carne X 1",
+    "is_combo": 0,
+    "sort_order": 111
+  },
+  {
+    "id": 325,
+    "list_type": "Minorista",
+    "category": "PREPARADOS",
+    "name": "ALBONDIGAS DE CARNE",
+    "sigla": "ALBON. carne X 3",
+    "is_combo": 0,
+    "sort_order": 112
+  },
+  {
+    "id": 326,
+    "list_type": "Minorista",
+    "category": "PREPARADOS",
+    "name": "EMPANADA DE CARNE",
+    "sigla": "EMPA CARNE X 6",
+    "is_combo": 0,
+    "sort_order": 113
+  },
+  {
+    "id": 327,
+    "list_type": "Minorista",
+    "category": "PREPARADOS",
+    "name": "EMPANADA DE POLLO",
+    "sigla": "EMPA  POLLO X 6",
+    "is_combo": 0,
+    "sort_order": 114
+  }
+]

@@ -1,0 +1,3926 @@
+[
+  {
+    "id": 1309,
+    "product_id": 219,
+    "label": "lista 19/02",
+    "price": 11700
+  },
+  {
+    "id": 1310,
+    "product_id": 219,
+    "label": "marzo",
+    "price": 11700
+  },
+  {
+    "id": 1311,
+    "product_id": 219,
+    "label": "lista 14/03",
+    "price": 12500
+  },
+  {
+    "id": 1312,
+    "product_id": 219,
+    "label": "lista 14/04",
+    "price": 12500
+  },
+  {
+    "id": 1313,
+    "product_id": 219,
+    "label": "lista 1/5",
+    "price": 13000
+  },
+  {
+    "id": 1314,
+    "product_id": 219,
+    "label": "Lista 26/5",
+    "price": 13000
+  },
+  {
+    "id": 1315,
+    "product_id": 220,
+    "label": "lista 19/02",
+    "price": 33400
+  },
+  {
+    "id": 1316,
+    "product_id": 220,
+    "label": "marzo",
+    "price": 33400
+  },
+  {
+    "id": 1317,
+    "product_id": 220,
+    "label": "lista 14/03",
+    "price": 35400
+  },
+  {
+    "id": 1318,
+    "product_id": 220,
+    "label": "lista 14/04",
+    "price": 35400
+  },
+  {
+    "id": 1319,
+    "product_id": 220,
+    "label": "lista 1/5",
+    "price": 37100
+  },
+  {
+    "id": 1320,
+    "product_id": 220,
+    "label": "Lista 26/5",
+    "price": 37100
+  },
+  {
+    "id": 1321,
+    "product_id": 221,
+    "label": "lista 19/02",
+    "price": 21200
+  },
+  {
+    "id": 1322,
+    "product_id": 221,
+    "label": "marzo",
+    "price": 21200
+  },
+  {
+    "id": 1323,
+    "product_id": 221,
+    "label": "lista 14/03",
+    "price": 21900
+  },
+  {
+    "id": 1324,
+    "product_id": 221,
+    "label": "lista 14/04",
+    "price": 21900
+  },
+  {
+    "id": 1325,
+    "product_id": 221,
+    "label": "lista 1/5",
+    "price": 23800
+  },
+  {
+    "id": 1326,
+    "product_id": 221,
+    "label": "Lista 26/5",
+    "price": 23800
+  },
+  {
+    "id": 1327,
+    "product_id": 222,
+    "label": "lista 19/02",
+    "price": 60400
+  },
+  {
+    "id": 1328,
+    "product_id": 222,
+    "label": "marzo",
+    "price": 60400
+  },
+  {
+    "id": 1329,
+    "product_id": 222,
+    "label": "lista 14/03",
+    "price": 62100
+  },
+  {
+    "id": 1330,
+    "product_id": 222,
+    "label": "lista 14/04",
+    "price": 62100
+  },
+  {
+    "id": 1331,
+    "product_id": 222,
+    "label": "lista 1/5",
+    "price": 67700
+  },
+  {
+    "id": 1332,
+    "product_id": 222,
+    "label": "Lista 26/5",
+    "price": 67700
+  },
+  {
+    "id": 1333,
+    "product_id": 223,
+    "label": "lista 19/02",
+    "price": 11700
+  },
+  {
+    "id": 1334,
+    "product_id": 223,
+    "label": "marzo",
+    "price": 11700
+  },
+  {
+    "id": 1335,
+    "product_id": 223,
+    "label": "lista 14/03",
+    "price": 12100
+  },
+  {
+    "id": 1336,
+    "product_id": 223,
+    "label": "lista 14/04",
+    "price": 12100
+  },
+  {
+    "id": 1337,
+    "product_id": 223,
+    "label": "lista 1/5",
+    "price": 12100
+  },
+  {
+    "id": 1338,
+    "product_id": 223,
+    "label": "Lista 26/5",
+    "price": 12100
+  },
+  {
+    "id": 1339,
+    "product_id": 224,
+    "label": "lista 19/02",
+    "price": 33400
+  },
+  {
+    "id": 1340,
+    "product_id": 224,
+    "label": "marzo",
+    "price": 33400
+  },
+  {
+    "id": 1341,
+    "product_id": 224,
+    "label": "lista 14/03",
+    "price": 34300
+  },
+  {
+    "id": 1342,
+    "product_id": 224,
+    "label": "lista 14/04",
+    "price": 34300
+  },
+  {
+    "id": 1343,
+    "product_id": 224,
+    "label": "lista 1/5",
+    "price": 34300
+  },
+  {
+    "id": 1344,
+    "product_id": 224,
+    "label": "Lista 26/5",
+    "price": 34300
+  },
+  {
+    "id": 1345,
+    "product_id": 225,
+    "label": "lista 19/02",
+    "price": 16600
+  },
+  {
+    "id": 1346,
+    "product_id": 225,
+    "label": "marzo",
+    "price": 16600
+  },
+  {
+    "id": 1347,
+    "product_id": 225,
+    "label": "lista 14/03",
+    "price": 17100
+  },
+  {
+    "id": 1348,
+    "product_id": 225,
+    "label": "lista 14/04",
+    "price": 17900
+  },
+  {
+    "id": 1349,
+    "product_id": 225,
+    "label": "lista 1/5",
+    "price": 20900
+  },
+  {
+    "id": 1350,
+    "product_id": 225,
+    "label": "Lista 26/5",
+    "price": 20900
+  },
+  {
+    "id": 1351,
+    "product_id": 226,
+    "label": "lista 19/02",
+    "price": 47300
+  },
+  {
+    "id": 1352,
+    "product_id": 226,
+    "label": "marzo",
+    "price": 47300
+  },
+  {
+    "id": 1353,
+    "product_id": 226,
+    "label": "lista 14/03",
+    "price": 48600
+  },
+  {
+    "id": 1354,
+    "product_id": 226,
+    "label": "lista 14/04",
+    "price": 51000
+  },
+  {
+    "id": 1355,
+    "product_id": 226,
+    "label": "lista 1/5",
+    "price": 59400
+  },
+  {
+    "id": 1356,
+    "product_id": 226,
+    "label": "Lista 26/5",
+    "price": 59400
+  },
+  {
+    "id": 1357,
+    "product_id": 227,
+    "label": "lista 19/02",
+    "price": 18400
+  },
+  {
+    "id": 1358,
+    "product_id": 227,
+    "label": "marzo",
+    "price": 18400
+  },
+  {
+    "id": 1359,
+    "product_id": 227,
+    "label": "lista 14/03",
+    "price": 19000
+  },
+  {
+    "id": 1360,
+    "product_id": 227,
+    "label": "lista 14/04",
+    "price": 19900
+  },
+  {
+    "id": 1361,
+    "product_id": 227,
+    "label": "lista 1/5",
+    "price": 23800
+  },
+  {
+    "id": 1362,
+    "product_id": 227,
+    "label": "Lista 26/5",
+    "price": 23800
+  },
+  {
+    "id": 1363,
+    "product_id": 228,
+    "label": "lista 19/02",
+    "price": 52500
+  },
+  {
+    "id": 1364,
+    "product_id": 228,
+    "label": "marzo",
+    "price": 52500
+  },
+  {
+    "id": 1365,
+    "product_id": 228,
+    "label": "lista 14/03",
+    "price": 54000
+  },
+  {
+    "id": 1366,
+    "product_id": 228,
+    "label": "lista 14/04",
+    "price": 56600
+  },
+  {
+    "id": 1367,
+    "product_id": 228,
+    "label": "lista 1/5",
+    "price": 67700
+  },
+  {
+    "id": 1368,
+    "product_id": 228,
+    "label": "Lista 26/5",
+    "price": 67700
+  },
+  {
+    "id": 1369,
+    "product_id": 229,
+    "label": "lista 19/02",
+    "price": 9400
+  },
+  {
+    "id": 1370,
+    "product_id": 229,
+    "label": "marzo",
+    "price": 9600
+  },
+  {
+    "id": 1371,
+    "product_id": 229,
+    "label": "lista 14/03",
+    "price": 10100
+  },
+  {
+    "id": 1372,
+    "product_id": 229,
+    "label": "lista 14/04",
+    "price": 10100
+  },
+  {
+    "id": 1373,
+    "product_id": 229,
+    "label": "lista 1/5",
+    "price": 10100
+  },
+  {
+    "id": 1374,
+    "product_id": 229,
+    "label": "Lista 26/5",
+    "price": 10100
+  },
+  {
+    "id": 1375,
+    "product_id": 230,
+    "label": "lista 19/02",
+    "price": 26800
+  },
+  {
+    "id": 1376,
+    "product_id": 230,
+    "label": "marzo",
+    "price": 27400
+  },
+  {
+    "id": 1377,
+    "product_id": 230,
+    "label": "lista 14/03",
+    "price": 28500
+  },
+  {
+    "id": 1378,
+    "product_id": 230,
+    "label": "lista 14/04",
+    "price": 28800
+  },
+  {
+    "id": 1379,
+    "product_id": 230,
+    "label": "lista 1/5",
+    "price": 28700
+  },
+  {
+    "id": 1380,
+    "product_id": 230,
+    "label": "Lista 26/5",
+    "price": 25000
+  },
+  {
+    "id": 1381,
+    "product_id": 231,
+    "label": "lista 19/02",
+    "price": 9400
+  },
+  {
+    "id": 1382,
+    "product_id": 231,
+    "label": "marzo",
+    "price": 9600
+  },
+  {
+    "id": 1383,
+    "product_id": 231,
+    "label": "lista 14/03",
+    "price": 10100
+  },
+  {
+    "id": 1384,
+    "product_id": 231,
+    "label": "lista 14/04",
+    "price": 10100
+  },
+  {
+    "id": 1385,
+    "product_id": 231,
+    "label": "lista 1/5",
+    "price": 10100
+  },
+  {
+    "id": 1386,
+    "product_id": 231,
+    "label": "Lista 26/5",
+    "price": 10100
+  },
+  {
+    "id": 1387,
+    "product_id": 232,
+    "label": "lista 19/02",
+    "price": 26800
+  },
+  {
+    "id": 1388,
+    "product_id": 232,
+    "label": "marzo",
+    "price": 27400
+  },
+  {
+    "id": 1389,
+    "product_id": 232,
+    "label": "lista 14/03",
+    "price": 28500
+  },
+  {
+    "id": 1390,
+    "product_id": 232,
+    "label": "lista 14/04",
+    "price": 28800
+  },
+  {
+    "id": 1391,
+    "product_id": 232,
+    "label": "lista 1/5",
+    "price": 28700
+  },
+  {
+    "id": 1392,
+    "product_id": 232,
+    "label": "Lista 26/5",
+    "price": 25000
+  },
+  {
+    "id": 1393,
+    "product_id": 233,
+    "label": "lista 19/02",
+    "price": 19600
+  },
+  {
+    "id": 1394,
+    "product_id": 233,
+    "label": "marzo",
+    "price": 21700
+  },
+  {
+    "id": 1395,
+    "product_id": 233,
+    "label": "lista 14/03",
+    "price": 27000
+  },
+  {
+    "id": 1396,
+    "product_id": 233,
+    "label": "lista 14/04",
+    "price": 27000
+  },
+  {
+    "id": 1397,
+    "product_id": 233,
+    "label": "lista 1/5",
+    "price": 24000
+  },
+  {
+    "id": 1398,
+    "product_id": 233,
+    "label": "Lista 26/5",
+    "price": 23700
+  },
+  {
+    "id": 1399,
+    "product_id": 234,
+    "label": "lista 19/02",
+    "price": 57900
+  },
+  {
+    "id": 1400,
+    "product_id": 234,
+    "label": "marzo",
+    "price": 63900
+  },
+  {
+    "id": 1401,
+    "product_id": 234,
+    "label": "lista 14/03",
+    "price": 78700
+  },
+  {
+    "id": 1402,
+    "product_id": 234,
+    "label": "lista 14/04",
+    "price": 78800
+  },
+  {
+    "id": 1403,
+    "product_id": 234,
+    "label": "lista 1/5",
+    "price": 70100
+  },
+  {
+    "id": 1404,
+    "product_id": 234,
+    "label": "Lista 26/5",
+    "price": 67300
+  },
+  {
+    "id": 1405,
+    "product_id": 235,
+    "label": "lista 19/02",
+    "price": 19600
+  },
+  {
+    "id": 1406,
+    "product_id": 235,
+    "label": "marzo",
+    "price": 21700
+  },
+  {
+    "id": 1407,
+    "product_id": 235,
+    "label": "lista 14/03",
+    "price": 27000
+  },
+  {
+    "id": 1408,
+    "product_id": 235,
+    "label": "lista 14/04",
+    "price": 27000
+  },
+  {
+    "id": 1409,
+    "product_id": 235,
+    "label": "lista 1/5",
+    "price": 24000
+  },
+  {
+    "id": 1410,
+    "product_id": 235,
+    "label": "Lista 26/5",
+    "price": 23700
+  },
+  {
+    "id": 1411,
+    "product_id": 236,
+    "label": "lista 19/02",
+    "price": 57900
+  },
+  {
+    "id": 1412,
+    "product_id": 236,
+    "label": "marzo",
+    "price": 63900
+  },
+  {
+    "id": 1413,
+    "product_id": 236,
+    "label": "lista 14/03",
+    "price": 78700
+  },
+  {
+    "id": 1414,
+    "product_id": 236,
+    "label": "lista 14/04",
+    "price": 78800
+  },
+  {
+    "id": 1415,
+    "product_id": 236,
+    "label": "lista 1/5",
+    "price": 70100
+  },
+  {
+    "id": 1416,
+    "product_id": 236,
+    "label": "Lista 26/5",
+    "price": 67300
+  },
+  {
+    "id": 1417,
+    "product_id": 237,
+    "label": "lista 19/02",
+    "price": 24600
+  },
+  {
+    "id": 1418,
+    "product_id": 237,
+    "label": "marzo",
+    "price": 25500
+  },
+  {
+    "id": 1419,
+    "product_id": 237,
+    "label": "lista 14/03",
+    "price": 28400
+  },
+  {
+    "id": 1420,
+    "product_id": 237,
+    "label": "lista 14/04",
+    "price": 28400
+  },
+  {
+    "id": 1421,
+    "product_id": 237,
+    "label": "lista 1/5",
+    "price": 28100
+  },
+  {
+    "id": 1422,
+    "product_id": 237,
+    "label": "Lista 26/5",
+    "price": 24500
+  },
+  {
+    "id": 1423,
+    "product_id": 238,
+    "label": "lista 19/02",
+    "price": 72100
+  },
+  {
+    "id": 1424,
+    "product_id": 238,
+    "label": "marzo",
+    "price": 74500
+  },
+  {
+    "id": 1425,
+    "product_id": 238,
+    "label": "lista 14/03",
+    "price": 81000
+  },
+  {
+    "id": 1426,
+    "product_id": 238,
+    "label": "lista 14/04",
+    "price": 81200
+  },
+  {
+    "id": 1427,
+    "product_id": 238,
+    "label": "lista 1/5",
+    "price": 80300
+  },
+  {
+    "id": 1428,
+    "product_id": 238,
+    "label": "Lista 26/5",
+    "price": 80300
+  },
+  {
+    "id": 1429,
+    "product_id": 239,
+    "label": "lista 19/02",
+    "price": 12400
+  },
+  {
+    "id": 1430,
+    "product_id": 239,
+    "label": "marzo",
+    "price": 12400
+  },
+  {
+    "id": 1431,
+    "product_id": 239,
+    "label": "lista 14/03",
+    "price": 13100
+  },
+  {
+    "id": 1432,
+    "product_id": 239,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1433,
+    "product_id": 239,
+    "label": "lista 1/5",
+    "price": 13900
+  },
+  {
+    "id": 1434,
+    "product_id": 239,
+    "label": "Lista 26/5",
+    "price": 13900
+  },
+  {
+    "id": 1435,
+    "product_id": 240,
+    "label": "lista 19/02",
+    "price": 35900
+  },
+  {
+    "id": 1436,
+    "product_id": 240,
+    "label": "marzo",
+    "price": 35900
+  },
+  {
+    "id": 1437,
+    "product_id": 240,
+    "label": "lista 14/03",
+    "price": 37100
+  },
+  {
+    "id": 1438,
+    "product_id": 240,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1439,
+    "product_id": 240,
+    "label": "lista 1/5",
+    "price": 39900
+  },
+  {
+    "id": 1440,
+    "product_id": 240,
+    "label": "Lista 26/5",
+    "price": 39900
+  },
+  {
+    "id": 1441,
+    "product_id": 241,
+    "label": "lista 19/02",
+    "price": 12400
+  },
+  {
+    "id": 1442,
+    "product_id": 241,
+    "label": "marzo",
+    "price": 12400
+  },
+  {
+    "id": 1443,
+    "product_id": 241,
+    "label": "lista 14/03",
+    "price": 13100
+  },
+  {
+    "id": 1444,
+    "product_id": 241,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1445,
+    "product_id": 241,
+    "label": "lista 1/5",
+    "price": 13900
+  },
+  {
+    "id": 1446,
+    "product_id": 241,
+    "label": "Lista 26/5",
+    "price": 13900
+  },
+  {
+    "id": 1447,
+    "product_id": 242,
+    "label": "lista 19/02",
+    "price": 35900
+  },
+  {
+    "id": 1448,
+    "product_id": 242,
+    "label": "marzo",
+    "price": 35900
+  },
+  {
+    "id": 1449,
+    "product_id": 242,
+    "label": "lista 14/03",
+    "price": 37100
+  },
+  {
+    "id": 1450,
+    "product_id": 242,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1451,
+    "product_id": 242,
+    "label": "lista 1/5",
+    "price": 39900
+  },
+  {
+    "id": 1452,
+    "product_id": 242,
+    "label": "Lista 26/5",
+    "price": 39900
+  },
+  {
+    "id": 1453,
+    "product_id": 243,
+    "label": "lista 19/02",
+    "price": 12400
+  },
+  {
+    "id": 1454,
+    "product_id": 243,
+    "label": "marzo",
+    "price": 12400
+  },
+  {
+    "id": 1455,
+    "product_id": 243,
+    "label": "lista 14/03",
+    "price": 13100
+  },
+  {
+    "id": 1456,
+    "product_id": 243,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1457,
+    "product_id": 243,
+    "label": "lista 1/5",
+    "price": 13900
+  },
+  {
+    "id": 1458,
+    "product_id": 243,
+    "label": "Lista 26/5",
+    "price": 13900
+  },
+  {
+    "id": 1459,
+    "product_id": 244,
+    "label": "lista 19/02",
+    "price": 35900
+  },
+  {
+    "id": 1460,
+    "product_id": 244,
+    "label": "marzo",
+    "price": 35900
+  },
+  {
+    "id": 1461,
+    "product_id": 244,
+    "label": "lista 14/03",
+    "price": 37100
+  },
+  {
+    "id": 1462,
+    "product_id": 244,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1463,
+    "product_id": 244,
+    "label": "lista 1/5",
+    "price": 39900
+  },
+  {
+    "id": 1464,
+    "product_id": 244,
+    "label": "Lista 26/5",
+    "price": 39900
+  },
+  {
+    "id": 1465,
+    "product_id": 245,
+    "label": "lista 19/02",
+    "price": 14200
+  },
+  {
+    "id": 1466,
+    "product_id": 245,
+    "label": "marzo",
+    "price": 14200
+  },
+  {
+    "id": 1467,
+    "product_id": 245,
+    "label": "lista 14/03",
+    "price": 14600
+  },
+  {
+    "id": 1468,
+    "product_id": 245,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1469,
+    "product_id": 245,
+    "label": "lista 1/5",
+    "price": 19900
+  },
+  {
+    "id": 1470,
+    "product_id": 245,
+    "label": "Lista 26/5",
+    "price": 19900
+  },
+  {
+    "id": 1471,
+    "product_id": 246,
+    "label": "lista 19/02",
+    "price": 40400
+  },
+  {
+    "id": 1472,
+    "product_id": 246,
+    "label": "marzo",
+    "price": 40400
+  },
+  {
+    "id": 1473,
+    "product_id": 246,
+    "label": "lista 14/03",
+    "price": 41600
+  },
+  {
+    "id": 1474,
+    "product_id": 246,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1475,
+    "product_id": 246,
+    "label": "lista 1/5",
+    "price": 56600
+  },
+  {
+    "id": 1476,
+    "product_id": 246,
+    "label": "Lista 26/5",
+    "price": 56600
+  },
+  {
+    "id": 1477,
+    "product_id": 247,
+    "label": "lista 19/02",
+    "price": 10100
+  },
+  {
+    "id": 1478,
+    "product_id": 247,
+    "label": "marzo",
+    "price": 10100
+  },
+  {
+    "id": 1479,
+    "product_id": 247,
+    "label": "lista 14/03",
+    "price": 10400
+  },
+  {
+    "id": 1480,
+    "product_id": 247,
+    "label": "lista 14/04",
+    "price": 10400
+  },
+  {
+    "id": 1481,
+    "product_id": 247,
+    "label": "lista 1/5",
+    "price": 10400
+  },
+  {
+    "id": 1482,
+    "product_id": 247,
+    "label": "Lista 26/5",
+    "price": 10400
+  },
+  {
+    "id": 1483,
+    "product_id": 248,
+    "label": "lista 19/02",
+    "price": 24400
+  },
+  {
+    "id": 1484,
+    "product_id": 248,
+    "label": "marzo",
+    "price": 24400
+  },
+  {
+    "id": 1485,
+    "product_id": 248,
+    "label": "lista 14/03",
+    "price": 25100
+  },
+  {
+    "id": 1486,
+    "product_id": 248,
+    "label": "lista 14/04",
+    "price": 25100
+  },
+  {
+    "id": 1487,
+    "product_id": 248,
+    "label": "lista 1/5",
+    "price": 25100
+  },
+  {
+    "id": 1488,
+    "product_id": 248,
+    "label": "Lista 26/5",
+    "price": 25100
+  },
+  {
+    "id": 1489,
+    "product_id": 249,
+    "label": "lista 19/02",
+    "price": 16200
+  },
+  {
+    "id": 1490,
+    "product_id": 249,
+    "label": "marzo",
+    "price": 16200
+  },
+  {
+    "id": 1491,
+    "product_id": 249,
+    "label": "lista 14/03",
+    "price": 16800
+  },
+  {
+    "id": 1492,
+    "product_id": 249,
+    "label": "lista 14/04",
+    "price": 16800
+  },
+  {
+    "id": 1493,
+    "product_id": 249,
+    "label": "lista 1/5",
+    "price": 0
+  },
+  {
+    "id": 1494,
+    "product_id": 249,
+    "label": "Lista 26/5",
+    "price": 0
+  },
+  {
+    "id": 1495,
+    "product_id": 250,
+    "label": "lista 19/02",
+    "price": 44500
+  },
+  {
+    "id": 1496,
+    "product_id": 250,
+    "label": "marzo",
+    "price": 44500
+  },
+  {
+    "id": 1497,
+    "product_id": 250,
+    "label": "lista 14/03",
+    "price": 45800
+  },
+  {
+    "id": 1498,
+    "product_id": 250,
+    "label": "lista 14/04",
+    "price": 45800
+  },
+  {
+    "id": 1499,
+    "product_id": 250,
+    "label": "lista 1/5",
+    "price": 0
+  },
+  {
+    "id": 1500,
+    "product_id": 250,
+    "label": "Lista 26/5",
+    "price": 0
+  },
+  {
+    "id": 1501,
+    "product_id": 251,
+    "label": "lista 19/02",
+    "price": 12600
+  },
+  {
+    "id": 1502,
+    "product_id": 251,
+    "label": "marzo",
+    "price": 12600
+  },
+  {
+    "id": 1503,
+    "product_id": 251,
+    "label": "lista 14/03",
+    "price": 13000
+  },
+  {
+    "id": 1504,
+    "product_id": 251,
+    "label": "lista 14/04",
+    "price": 13000
+  },
+  {
+    "id": 1505,
+    "product_id": 251,
+    "label": "lista 1/5",
+    "price": 14700
+  },
+  {
+    "id": 1506,
+    "product_id": 251,
+    "label": "Lista 26/5",
+    "price": 14700
+  },
+  {
+    "id": 1507,
+    "product_id": 252,
+    "label": "lista 19/02",
+    "price": 34000
+  },
+  {
+    "id": 1508,
+    "product_id": 252,
+    "label": "marzo",
+    "price": 34000
+  },
+  {
+    "id": 1509,
+    "product_id": 252,
+    "label": "lista 14/03",
+    "price": 35000
+  },
+  {
+    "id": 1510,
+    "product_id": 252,
+    "label": "lista 14/04",
+    "price": 35000
+  },
+  {
+    "id": 1511,
+    "product_id": 252,
+    "label": "lista 1/5",
+    "price": 39800
+  },
+  {
+    "id": 1512,
+    "product_id": 252,
+    "label": "Lista 26/5",
+    "price": 39800
+  },
+  {
+    "id": 1513,
+    "product_id": 253,
+    "label": "lista 19/02",
+    "price": 14800
+  },
+  {
+    "id": 1514,
+    "product_id": 253,
+    "label": "marzo",
+    "price": 14800
+  },
+  {
+    "id": 1515,
+    "product_id": 253,
+    "label": "lista 14/03",
+    "price": 15200
+  },
+  {
+    "id": 1516,
+    "product_id": 253,
+    "label": "lista 14/04",
+    "price": 15200
+  },
+  {
+    "id": 1517,
+    "product_id": 253,
+    "label": "lista 1/5",
+    "price": 15200
+  },
+  {
+    "id": 1518,
+    "product_id": 253,
+    "label": "Lista 26/5",
+    "price": 15200
+  },
+  {
+    "id": 1519,
+    "product_id": 254,
+    "label": "lista 19/02",
+    "price": 40300
+  },
+  {
+    "id": 1520,
+    "product_id": 254,
+    "label": "marzo",
+    "price": 40300
+  },
+  {
+    "id": 1521,
+    "product_id": 254,
+    "label": "lista 14/03",
+    "price": 41400
+  },
+  {
+    "id": 1522,
+    "product_id": 254,
+    "label": "lista 14/04",
+    "price": 41400
+  },
+  {
+    "id": 1523,
+    "product_id": 254,
+    "label": "lista 1/5",
+    "price": 41400
+  },
+  {
+    "id": 1524,
+    "product_id": 254,
+    "label": "Lista 26/5",
+    "price": 41400
+  },
+  {
+    "id": 1525,
+    "product_id": 255,
+    "label": "lista 19/02",
+    "price": 14200
+  },
+  {
+    "id": 1526,
+    "product_id": 255,
+    "label": "marzo",
+    "price": 14200
+  },
+  {
+    "id": 1527,
+    "product_id": 255,
+    "label": "lista 14/03",
+    "price": 14700
+  },
+  {
+    "id": 1528,
+    "product_id": 255,
+    "label": "lista 14/04",
+    "price": 14700
+  },
+  {
+    "id": 1529,
+    "product_id": 255,
+    "label": "lista 1/5",
+    "price": 0
+  },
+  {
+    "id": 1530,
+    "product_id": 255,
+    "label": "Lista 26/5",
+    "price": 0
+  },
+  {
+    "id": 1531,
+    "product_id": 256,
+    "label": "lista 19/02",
+    "price": 38700
+  },
+  {
+    "id": 1532,
+    "product_id": 256,
+    "label": "marzo",
+    "price": 38700
+  },
+  {
+    "id": 1533,
+    "product_id": 256,
+    "label": "lista 14/03",
+    "price": 39800
+  },
+  {
+    "id": 1534,
+    "product_id": 256,
+    "label": "lista 14/04",
+    "price": 39800
+  },
+  {
+    "id": 1535,
+    "product_id": 256,
+    "label": "lista 1/5",
+    "price": 0
+  },
+  {
+    "id": 1536,
+    "product_id": 256,
+    "label": "Lista 26/5",
+    "price": 0
+  },
+  {
+    "id": 1537,
+    "product_id": 257,
+    "label": "lista 19/02",
+    "price": 16600
+  },
+  {
+    "id": 1538,
+    "product_id": 257,
+    "label": "marzo",
+    "price": 16600
+  },
+  {
+    "id": 1539,
+    "product_id": 257,
+    "label": "lista 14/03",
+    "price": 17100
+  },
+  {
+    "id": 1540,
+    "product_id": 257,
+    "label": "lista 14/04",
+    "price": 17100
+  },
+  {
+    "id": 1541,
+    "product_id": 257,
+    "label": "lista 1/5",
+    "price": 17100
+  },
+  {
+    "id": 1542,
+    "product_id": 257,
+    "label": "Lista 26/5",
+    "price": 17100
+  },
+  {
+    "id": 1543,
+    "product_id": 258,
+    "label": "lista 19/02",
+    "price": 45500
+  },
+  {
+    "id": 1544,
+    "product_id": 258,
+    "label": "marzo",
+    "price": 45500
+  },
+  {
+    "id": 1545,
+    "product_id": 258,
+    "label": "lista 14/03",
+    "price": 46800
+  },
+  {
+    "id": 1546,
+    "product_id": 258,
+    "label": "lista 14/04",
+    "price": 46800
+  },
+  {
+    "id": 1547,
+    "product_id": 258,
+    "label": "lista 1/5",
+    "price": 46800
+  },
+  {
+    "id": 1548,
+    "product_id": 258,
+    "label": "Lista 26/5",
+    "price": 46800
+  },
+  {
+    "id": 1549,
+    "product_id": 259,
+    "label": "lista 19/02",
+    "price": 13100
+  },
+  {
+    "id": 1550,
+    "product_id": 259,
+    "label": "marzo",
+    "price": 13100
+  },
+  {
+    "id": 1551,
+    "product_id": 259,
+    "label": "lista 14/03",
+    "price": 13500
+  },
+  {
+    "id": 1552,
+    "product_id": 259,
+    "label": "lista 14/04",
+    "price": 13500
+  },
+  {
+    "id": 1553,
+    "product_id": 259,
+    "label": "lista 1/5",
+    "price": 13900
+  },
+  {
+    "id": 1554,
+    "product_id": 259,
+    "label": "Lista 26/5",
+    "price": 13900
+  },
+  {
+    "id": 1555,
+    "product_id": 260,
+    "label": "lista 19/02",
+    "price": 35600
+  },
+  {
+    "id": 1556,
+    "product_id": 260,
+    "label": "marzo",
+    "price": 35600
+  },
+  {
+    "id": 1557,
+    "product_id": 260,
+    "label": "lista 14/03",
+    "price": 36600
+  },
+  {
+    "id": 1558,
+    "product_id": 260,
+    "label": "lista 14/04",
+    "price": 36600
+  },
+  {
+    "id": 1559,
+    "product_id": 260,
+    "label": "lista 1/5",
+    "price": 37700
+  },
+  {
+    "id": 1560,
+    "product_id": 260,
+    "label": "Lista 26/5",
+    "price": 37700
+  },
+  {
+    "id": 1561,
+    "product_id": 261,
+    "label": "lista 19/02",
+    "price": 13100
+  },
+  {
+    "id": 1562,
+    "product_id": 261,
+    "label": "marzo",
+    "price": 13100
+  },
+  {
+    "id": 1563,
+    "product_id": 261,
+    "label": "lista 14/03",
+    "price": 13500
+  },
+  {
+    "id": 1564,
+    "product_id": 261,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1565,
+    "product_id": 261,
+    "label": "lista 1/5",
+    "price": 17700
+  },
+  {
+    "id": 1566,
+    "product_id": 261,
+    "label": "Lista 26/5",
+    "price": 17700
+  },
+  {
+    "id": 1567,
+    "product_id": 262,
+    "label": "lista 19/02",
+    "price": 37400
+  },
+  {
+    "id": 1568,
+    "product_id": 262,
+    "label": "marzo",
+    "price": 37400
+  },
+  {
+    "id": 1569,
+    "product_id": 262,
+    "label": "lista 14/03",
+    "price": 38500
+  },
+  {
+    "id": 1570,
+    "product_id": 262,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1571,
+    "product_id": 262,
+    "label": "lista 1/5",
+    "price": 50100
+  },
+  {
+    "id": 1572,
+    "product_id": 262,
+    "label": "Lista 26/5",
+    "price": 50100
+  },
+  {
+    "id": 1573,
+    "product_id": 263,
+    "label": "lista 19/02",
+    "price": 10700
+  },
+  {
+    "id": 1574,
+    "product_id": 263,
+    "label": "marzo",
+    "price": 10700
+  },
+  {
+    "id": 1575,
+    "product_id": 263,
+    "label": "lista 14/03",
+    "price": 11100
+  },
+  {
+    "id": 1576,
+    "product_id": 263,
+    "label": "lista 14/04",
+    "price": 11100
+  },
+  {
+    "id": 1577,
+    "product_id": 263,
+    "label": "lista 1/5",
+    "price": 12000
+  },
+  {
+    "id": 1578,
+    "product_id": 263,
+    "label": "Lista 26/5",
+    "price": 12000
+  },
+  {
+    "id": 1579,
+    "product_id": 264,
+    "label": "lista 19/02",
+    "price": 11600
+  },
+  {
+    "id": 1580,
+    "product_id": 264,
+    "label": "marzo",
+    "price": 11600
+  },
+  {
+    "id": 1581,
+    "product_id": 264,
+    "label": "lista 14/03",
+    "price": 12000
+  },
+  {
+    "id": 1582,
+    "product_id": 264,
+    "label": "lista 14/04",
+    "price": 12000
+  },
+  {
+    "id": 1583,
+    "product_id": 264,
+    "label": "lista 1/5",
+    "price": 13200
+  },
+  {
+    "id": 1584,
+    "product_id": 264,
+    "label": "Lista 26/5",
+    "price": 13200
+  },
+  {
+    "id": 1585,
+    "product_id": 265,
+    "label": "lista 19/02",
+    "price": 13600
+  },
+  {
+    "id": 1586,
+    "product_id": 265,
+    "label": "marzo",
+    "price": 13600
+  },
+  {
+    "id": 1587,
+    "product_id": 265,
+    "label": "lista 14/03",
+    "price": 14000
+  },
+  {
+    "id": 1588,
+    "product_id": 265,
+    "label": "lista 14/04",
+    "price": 14700
+  },
+  {
+    "id": 1589,
+    "product_id": 265,
+    "label": "lista 1/5",
+    "price": 15600
+  },
+  {
+    "id": 1590,
+    "product_id": 265,
+    "label": "Lista 26/5",
+    "price": 16000
+  },
+  {
+    "id": 1591,
+    "product_id": 266,
+    "label": "lista 19/02",
+    "price": 10000
+  },
+  {
+    "id": 1592,
+    "product_id": 266,
+    "label": "marzo",
+    "price": 10100
+  },
+  {
+    "id": 1593,
+    "product_id": 266,
+    "label": "lista 14/03",
+    "price": 10400
+  },
+  {
+    "id": 1594,
+    "product_id": 266,
+    "label": "lista 14/04",
+    "price": 11100
+  },
+  {
+    "id": 1595,
+    "product_id": 266,
+    "label": "lista 1/5",
+    "price": 11400
+  },
+  {
+    "id": 1596,
+    "product_id": 266,
+    "label": "Lista 26/5",
+    "price": 11800
+  },
+  {
+    "id": 1597,
+    "product_id": 267,
+    "label": "lista 19/02",
+    "price": 29800
+  },
+  {
+    "id": 1598,
+    "product_id": 267,
+    "label": "marzo",
+    "price": 30300
+  },
+  {
+    "id": 1599,
+    "product_id": 267,
+    "label": "lista 14/03",
+    "price": 30900
+  },
+  {
+    "id": 1600,
+    "product_id": 267,
+    "label": "lista 14/04",
+    "price": 32300
+  },
+  {
+    "id": 1601,
+    "product_id": 267,
+    "label": "lista 1/5",
+    "price": 33400
+  },
+  {
+    "id": 1602,
+    "product_id": 267,
+    "label": "Lista 26/5",
+    "price": 34300
+  },
+  {
+    "id": 1603,
+    "product_id": 268,
+    "label": "lista 19/02",
+    "price": 48200
+  },
+  {
+    "id": 1604,
+    "product_id": 268,
+    "label": "marzo",
+    "price": 49900
+  },
+  {
+    "id": 1605,
+    "product_id": 268,
+    "label": "lista 14/03",
+    "price": 49900
+  },
+  {
+    "id": 1606,
+    "product_id": 268,
+    "label": "lista 14/04",
+    "price": 52600
+  },
+  {
+    "id": 1607,
+    "product_id": 268,
+    "label": "lista 1/5",
+    "price": 54400
+  },
+  {
+    "id": 1608,
+    "product_id": 268,
+    "label": "Lista 26/5",
+    "price": 55000
+  },
+  {
+    "id": 1609,
+    "product_id": 269,
+    "label": "lista 19/02",
+    "price": 94300
+  },
+  {
+    "id": 1610,
+    "product_id": 269,
+    "label": "marzo",
+    "price": 97800
+  },
+  {
+    "id": 1611,
+    "product_id": 269,
+    "label": "lista 14/03",
+    "price": 99000
+  },
+  {
+    "id": 1612,
+    "product_id": 269,
+    "label": "lista 14/04",
+    "price": 103100
+  },
+  {
+    "id": 1613,
+    "product_id": 269,
+    "label": "lista 1/5",
+    "price": 106600
+  },
+  {
+    "id": 1614,
+    "product_id": 269,
+    "label": "Lista 26/5",
+    "price": 107800
+  },
+  {
+    "id": 1615,
+    "product_id": 270,
+    "label": "lista 19/02",
+    "price": 141100
+  },
+  {
+    "id": 1616,
+    "product_id": 270,
+    "label": "marzo",
+    "price": 146200
+  },
+  {
+    "id": 1617,
+    "product_id": 270,
+    "label": "lista 14/03",
+    "price": 148000
+  },
+  {
+    "id": 1618,
+    "product_id": 270,
+    "label": "lista 14/04",
+    "price": 153200
+  },
+  {
+    "id": 1619,
+    "product_id": 270,
+    "label": "lista 1/5",
+    "price": 158500
+  },
+  {
+    "id": 1620,
+    "product_id": 270,
+    "label": "Lista 26/5",
+    "price": 158500
+  },
+  {
+    "id": 1621,
+    "product_id": 271,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1622,
+    "product_id": 271,
+    "label": "marzo",
+    "price": 194700
+  },
+  {
+    "id": 1623,
+    "product_id": 271,
+    "label": "lista 14/03",
+    "price": 197330
+  },
+  {
+    "id": 1624,
+    "product_id": 271,
+    "label": "lista 14/04",
+    "price": 204000
+  },
+  {
+    "id": 1625,
+    "product_id": 271,
+    "label": "lista 1/5",
+    "price": 210900
+  },
+  {
+    "id": 1626,
+    "product_id": 271,
+    "label": "Lista 26/5",
+    "price": 210900
+  },
+  {
+    "id": 1627,
+    "product_id": 272,
+    "label": "lista 19/02",
+    "price": 95000
+  },
+  {
+    "id": 1628,
+    "product_id": 272,
+    "label": "marzo",
+    "price": 98600
+  },
+  {
+    "id": 1629,
+    "product_id": 272,
+    "label": "lista 14/03",
+    "price": 98600
+  },
+  {
+    "id": 1630,
+    "product_id": 272,
+    "label": "lista 14/04",
+    "price": 101600
+  },
+  {
+    "id": 1631,
+    "product_id": 272,
+    "label": "lista 1/5",
+    "price": 103000
+  },
+  {
+    "id": 1632,
+    "product_id": 272,
+    "label": "Lista 26/5",
+    "price": 103000
+  },
+  {
+    "id": 1633,
+    "product_id": 273,
+    "label": "lista 19/02",
+    "price": 123000
+  },
+  {
+    "id": 1634,
+    "product_id": 273,
+    "label": "marzo",
+    "price": 128800
+  },
+  {
+    "id": 1635,
+    "product_id": 273,
+    "label": "lista 14/03",
+    "price": 128800
+  },
+  {
+    "id": 1636,
+    "product_id": 273,
+    "label": "lista 14/04",
+    "price": 132800
+  },
+  {
+    "id": 1637,
+    "product_id": 273,
+    "label": "lista 1/5",
+    "price": 135000
+  },
+  {
+    "id": 1638,
+    "product_id": 273,
+    "label": "Lista 26/5",
+    "price": 135000
+  },
+  {
+    "id": 1639,
+    "product_id": 274,
+    "label": "lista 19/02",
+    "price": 153750
+  },
+  {
+    "id": 1640,
+    "product_id": 274,
+    "label": "marzo",
+    "price": 161000
+  },
+  {
+    "id": 1641,
+    "product_id": 274,
+    "label": "lista 14/03",
+    "price": 161000
+  },
+  {
+    "id": 1642,
+    "product_id": 274,
+    "label": "lista 14/04",
+    "price": 166000
+  },
+  {
+    "id": 1643,
+    "product_id": 274,
+    "label": "lista 1/5",
+    "price": 168750
+  },
+  {
+    "id": 1644,
+    "product_id": 274,
+    "label": "Lista 26/5",
+    "price": 168750
+  },
+  {
+    "id": 1645,
+    "product_id": 275,
+    "label": "lista 19/02",
+    "price": 184500
+  },
+  {
+    "id": 1646,
+    "product_id": 275,
+    "label": "marzo",
+    "price": 193200
+  },
+  {
+    "id": 1647,
+    "product_id": 275,
+    "label": "lista 14/03",
+    "price": 193200
+  },
+  {
+    "id": 1648,
+    "product_id": 275,
+    "label": "lista 14/04",
+    "price": 199200
+  },
+  {
+    "id": 1649,
+    "product_id": 275,
+    "label": "lista 1/5",
+    "price": 202500
+  },
+  {
+    "id": 1650,
+    "product_id": 275,
+    "label": "Lista 26/5",
+    "price": 202500
+  },
+  {
+    "id": 1651,
+    "product_id": 276,
+    "label": "lista 19/02",
+    "price": 215250
+  },
+  {
+    "id": 1652,
+    "product_id": 276,
+    "label": "marzo",
+    "price": 225400
+  },
+  {
+    "id": 1653,
+    "product_id": 276,
+    "label": "lista 14/03",
+    "price": 225400
+  },
+  {
+    "id": 1654,
+    "product_id": 276,
+    "label": "lista 14/04",
+    "price": 232400
+  },
+  {
+    "id": 1655,
+    "product_id": 276,
+    "label": "lista 1/5",
+    "price": 236250
+  },
+  {
+    "id": 1656,
+    "product_id": 276,
+    "label": "Lista 26/5",
+    "price": 236250
+  },
+  {
+    "id": 1657,
+    "product_id": 277,
+    "label": "lista 19/02",
+    "price": 5900
+  },
+  {
+    "id": 1658,
+    "product_id": 277,
+    "label": "marzo",
+    "price": 6200
+  },
+  {
+    "id": 1659,
+    "product_id": 277,
+    "label": "lista 14/03",
+    "price": 6300
+  },
+  {
+    "id": 1660,
+    "product_id": 277,
+    "label": "lista 14/04",
+    "price": 6800
+  },
+  {
+    "id": 1661,
+    "product_id": 277,
+    "label": "lista 1/5",
+    "price": 6800
+  },
+  {
+    "id": 1662,
+    "product_id": 277,
+    "label": "Lista 26/5",
+    "price": 6800
+  },
+  {
+    "id": 1663,
+    "product_id": 278,
+    "label": "lista 19/02",
+    "price": 17600
+  },
+  {
+    "id": 1664,
+    "product_id": 278,
+    "label": "marzo",
+    "price": 18500
+  },
+  {
+    "id": 1665,
+    "product_id": 278,
+    "label": "lista 14/03",
+    "price": 18800
+  },
+  {
+    "id": 1666,
+    "product_id": 278,
+    "label": "lista 14/04",
+    "price": 20200
+  },
+  {
+    "id": 1667,
+    "product_id": 278,
+    "label": "lista 1/5",
+    "price": 20200
+  },
+  {
+    "id": 1668,
+    "product_id": 278,
+    "label": "Lista 26/5",
+    "price": 20200
+  },
+  {
+    "id": 1669,
+    "product_id": 279,
+    "label": "lista 19/02",
+    "price": 28600
+  },
+  {
+    "id": 1670,
+    "product_id": 279,
+    "label": "marzo",
+    "price": 30300
+  },
+  {
+    "id": 1671,
+    "product_id": 279,
+    "label": "lista 14/03",
+    "price": 30700
+  },
+  {
+    "id": 1672,
+    "product_id": 279,
+    "label": "lista 14/04",
+    "price": 32600
+  },
+  {
+    "id": 1673,
+    "product_id": 279,
+    "label": "lista 1/5",
+    "price": 32600
+  },
+  {
+    "id": 1674,
+    "product_id": 279,
+    "label": "Lista 26/5",
+    "price": 32600
+  },
+  {
+    "id": 1675,
+    "product_id": 280,
+    "label": "lista 19/02",
+    "price": 56300
+  },
+  {
+    "id": 1676,
+    "product_id": 280,
+    "label": "marzo",
+    "price": 59700
+  },
+  {
+    "id": 1677,
+    "product_id": 280,
+    "label": "lista 14/03",
+    "price": 60400
+  },
+  {
+    "id": 1678,
+    "product_id": 280,
+    "label": "lista 14/04",
+    "price": 63900
+  },
+  {
+    "id": 1679,
+    "product_id": 280,
+    "label": "lista 1/5",
+    "price": 63900
+  },
+  {
+    "id": 1680,
+    "product_id": 280,
+    "label": "Lista 26/5",
+    "price": 63900
+  },
+  {
+    "id": 1681,
+    "product_id": 281,
+    "label": "lista 19/02",
+    "price": 7900
+  },
+  {
+    "id": 1682,
+    "product_id": 281,
+    "label": "marzo",
+    "price": 7900
+  },
+  {
+    "id": 1683,
+    "product_id": 281,
+    "label": "lista 14/03",
+    "price": 7900
+  },
+  {
+    "id": 1684,
+    "product_id": 281,
+    "label": "lista 14/04",
+    "price": 8200
+  },
+  {
+    "id": 1685,
+    "product_id": 281,
+    "label": "lista 1/5",
+    "price": 8200
+  },
+  {
+    "id": 1686,
+    "product_id": 281,
+    "label": "Lista 26/5",
+    "price": 7900
+  },
+  {
+    "id": 1687,
+    "product_id": 282,
+    "label": "lista 19/02",
+    "price": 41500
+  },
+  {
+    "id": 1688,
+    "product_id": 282,
+    "label": "marzo",
+    "price": 41500
+  },
+  {
+    "id": 1689,
+    "product_id": 282,
+    "label": "lista 14/03",
+    "price": 41500
+  },
+  {
+    "id": 1690,
+    "product_id": 282,
+    "label": "lista 14/04",
+    "price": 43300
+  },
+  {
+    "id": 1691,
+    "product_id": 282,
+    "label": "lista 1/5",
+    "price": 43300
+  },
+  {
+    "id": 1692,
+    "product_id": 282,
+    "label": "Lista 26/5",
+    "price": 42400
+  },
+  {
+    "id": 1693,
+    "product_id": 283,
+    "label": "lista 19/02",
+    "price": 79700
+  },
+  {
+    "id": 1694,
+    "product_id": 283,
+    "label": "marzo",
+    "price": 79700
+  },
+  {
+    "id": 1695,
+    "product_id": 283,
+    "label": "lista 14/03",
+    "price": 79700
+  },
+  {
+    "id": 1696,
+    "product_id": 283,
+    "label": "lista 14/04",
+    "price": 83200
+  },
+  {
+    "id": 1697,
+    "product_id": 283,
+    "label": "lista 1/5",
+    "price": 83300
+  },
+  {
+    "id": 1698,
+    "product_id": 283,
+    "label": "Lista 26/5",
+    "price": 81400
+  },
+  {
+    "id": 1699,
+    "product_id": 284,
+    "label": "lista 19/02",
+    "price": 6900
+  },
+  {
+    "id": 1700,
+    "product_id": 284,
+    "label": "marzo",
+    "price": 6400
+  },
+  {
+    "id": 1701,
+    "product_id": 284,
+    "label": "lista 14/03",
+    "price": 6600
+  },
+  {
+    "id": 1702,
+    "product_id": 284,
+    "label": "lista 14/04",
+    "price": 7000
+  },
+  {
+    "id": 1703,
+    "product_id": 284,
+    "label": "lista 1/5",
+    "price": 7000
+  },
+  {
+    "id": 1704,
+    "product_id": 284,
+    "label": "Lista 26/5",
+    "price": 7500
+  },
+  {
+    "id": 1705,
+    "product_id": 285,
+    "label": "lista 19/02",
+    "price": 17500
+  },
+  {
+    "id": 1706,
+    "product_id": 285,
+    "label": "marzo",
+    "price": 18500
+  },
+  {
+    "id": 1707,
+    "product_id": 285,
+    "label": "lista 14/03",
+    "price": 19300
+  },
+  {
+    "id": 1708,
+    "product_id": 285,
+    "label": "lista 14/04",
+    "price": 20400
+  },
+  {
+    "id": 1709,
+    "product_id": 285,
+    "label": "lista 1/5",
+    "price": 20400
+  },
+  {
+    "id": 1710,
+    "product_id": 285,
+    "label": "Lista 26/5",
+    "price": 21000
+  },
+  {
+    "id": 1711,
+    "product_id": 286,
+    "label": "lista 19/02",
+    "price": 6300
+  },
+  {
+    "id": 1712,
+    "product_id": 286,
+    "label": "marzo",
+    "price": 6600
+  },
+  {
+    "id": 1713,
+    "product_id": 286,
+    "label": "lista 14/03",
+    "price": 6800
+  },
+  {
+    "id": 1714,
+    "product_id": 286,
+    "label": "lista 14/04",
+    "price": 7200
+  },
+  {
+    "id": 1715,
+    "product_id": 286,
+    "label": "lista 1/5",
+    "price": 7200
+  },
+  {
+    "id": 1716,
+    "product_id": 286,
+    "label": "Lista 26/5",
+    "price": 7000
+  },
+  {
+    "id": 1717,
+    "product_id": 287,
+    "label": "lista 19/02",
+    "price": 17700
+  },
+  {
+    "id": 1718,
+    "product_id": 287,
+    "label": "marzo",
+    "price": 18800
+  },
+  {
+    "id": 1719,
+    "product_id": 287,
+    "label": "lista 14/03",
+    "price": 19900
+  },
+  {
+    "id": 1720,
+    "product_id": 287,
+    "label": "lista 14/04",
+    "price": 20900
+  },
+  {
+    "id": 1721,
+    "product_id": 287,
+    "label": "lista 1/5",
+    "price": 20900
+  },
+  {
+    "id": 1722,
+    "product_id": 287,
+    "label": "Lista 26/5",
+    "price": 20500
+  },
+  {
+    "id": 1723,
+    "product_id": 288,
+    "label": "lista 19/02",
+    "price": 10300
+  },
+  {
+    "id": 1724,
+    "product_id": 288,
+    "label": "marzo",
+    "price": 10400
+  },
+  {
+    "id": 1725,
+    "product_id": 288,
+    "label": "lista 14/03",
+    "price": 10700
+  },
+  {
+    "id": 1726,
+    "product_id": 288,
+    "label": "lista 14/04",
+    "price": 11400
+  },
+  {
+    "id": 1727,
+    "product_id": 288,
+    "label": "lista 1/5",
+    "price": 11800
+  },
+  {
+    "id": 1728,
+    "product_id": 288,
+    "label": "Lista 26/5",
+    "price": 12100
+  },
+  {
+    "id": 1729,
+    "product_id": 289,
+    "label": "lista 19/02",
+    "price": 29300
+  },
+  {
+    "id": 1730,
+    "product_id": 289,
+    "label": "marzo",
+    "price": 30300
+  },
+  {
+    "id": 1731,
+    "product_id": 289,
+    "label": "lista 14/03",
+    "price": 31200
+  },
+  {
+    "id": 1732,
+    "product_id": 289,
+    "label": "lista 14/04",
+    "price": 33200
+  },
+  {
+    "id": 1733,
+    "product_id": 289,
+    "label": "lista 1/5",
+    "price": 34300
+  },
+  {
+    "id": 1734,
+    "product_id": 289,
+    "label": "Lista 26/5",
+    "price": 34900
+  },
+  {
+    "id": 1735,
+    "product_id": 290,
+    "label": "lista 19/02",
+    "price": 10000
+  },
+  {
+    "id": 1736,
+    "product_id": 290,
+    "label": "marzo",
+    "price": 10100
+  },
+  {
+    "id": 1737,
+    "product_id": 290,
+    "label": "lista 14/03",
+    "price": 10700
+  },
+  {
+    "id": 1738,
+    "product_id": 290,
+    "label": "lista 14/04",
+    "price": 11400
+  },
+  {
+    "id": 1739,
+    "product_id": 290,
+    "label": "lista 1/5",
+    "price": 11800
+  },
+  {
+    "id": 1740,
+    "product_id": 290,
+    "label": "Lista 26/5",
+    "price": 12100
+  },
+  {
+    "id": 1741,
+    "product_id": 291,
+    "label": "lista 19/02",
+    "price": 28900
+  },
+  {
+    "id": 1742,
+    "product_id": 291,
+    "label": "marzo",
+    "price": 30000
+  },
+  {
+    "id": 1743,
+    "product_id": 291,
+    "label": "lista 14/03",
+    "price": 31200
+  },
+  {
+    "id": 1744,
+    "product_id": 291,
+    "label": "lista 14/04",
+    "price": 33200
+  },
+  {
+    "id": 1745,
+    "product_id": 291,
+    "label": "lista 1/5",
+    "price": 34300
+  },
+  {
+    "id": 1746,
+    "product_id": 291,
+    "label": "Lista 26/5",
+    "price": 34900
+  },
+  {
+    "id": 1747,
+    "product_id": 292,
+    "label": "lista 19/02",
+    "price": 10000
+  },
+  {
+    "id": 1748,
+    "product_id": 292,
+    "label": "marzo",
+    "price": 10100
+  },
+  {
+    "id": 1749,
+    "product_id": 292,
+    "label": "lista 14/03",
+    "price": 10700
+  },
+  {
+    "id": 1750,
+    "product_id": 292,
+    "label": "lista 14/04",
+    "price": 11400
+  },
+  {
+    "id": 1751,
+    "product_id": 292,
+    "label": "lista 1/5",
+    "price": 11800
+  },
+  {
+    "id": 1752,
+    "product_id": 292,
+    "label": "Lista 26/5",
+    "price": 12100
+  },
+  {
+    "id": 1753,
+    "product_id": 293,
+    "label": "lista 19/02",
+    "price": 28900
+  },
+  {
+    "id": 1754,
+    "product_id": 293,
+    "label": "marzo",
+    "price": 30000
+  },
+  {
+    "id": 1755,
+    "product_id": 293,
+    "label": "lista 14/03",
+    "price": 31200
+  },
+  {
+    "id": 1756,
+    "product_id": 293,
+    "label": "lista 14/04",
+    "price": 33200
+  },
+  {
+    "id": 1757,
+    "product_id": 293,
+    "label": "lista 1/5",
+    "price": 34300
+  },
+  {
+    "id": 1758,
+    "product_id": 293,
+    "label": "Lista 26/5",
+    "price": 34900
+  },
+  {
+    "id": 1759,
+    "product_id": 294,
+    "label": "lista 19/02",
+    "price": 15200
+  },
+  {
+    "id": 1760,
+    "product_id": 294,
+    "label": "marzo",
+    "price": 15800
+  },
+  {
+    "id": 1761,
+    "product_id": 294,
+    "label": "lista 14/03",
+    "price": 16000
+  },
+  {
+    "id": 1762,
+    "product_id": 294,
+    "label": "lista 14/04",
+    "price": 16000
+  },
+  {
+    "id": 1763,
+    "product_id": 294,
+    "label": "lista 1/5",
+    "price": 16000
+  },
+  {
+    "id": 1764,
+    "product_id": 294,
+    "label": "Lista 26/5",
+    "price": 16000
+  },
+  {
+    "id": 1765,
+    "product_id": 295,
+    "label": "lista 19/02",
+    "price": 9500
+  },
+  {
+    "id": 1766,
+    "product_id": 295,
+    "label": "marzo",
+    "price": 9300
+  },
+  {
+    "id": 1767,
+    "product_id": 295,
+    "label": "lista 14/03",
+    "price": 9300
+  },
+  {
+    "id": 1768,
+    "product_id": 295,
+    "label": "lista 14/04",
+    "price": 9300
+  },
+  {
+    "id": 1769,
+    "product_id": 295,
+    "label": "lista 1/5",
+    "price": 9300
+  },
+  {
+    "id": 1770,
+    "product_id": 295,
+    "label": "Lista 26/5",
+    "price": 12000
+  },
+  {
+    "id": 1771,
+    "product_id": 296,
+    "label": "lista 19/02",
+    "price": 8400
+  },
+  {
+    "id": 1772,
+    "product_id": 296,
+    "label": "marzo",
+    "price": 8200
+  },
+  {
+    "id": 1773,
+    "product_id": 296,
+    "label": "lista 14/03",
+    "price": 8200
+  },
+  {
+    "id": 1774,
+    "product_id": 296,
+    "label": "lista 14/04",
+    "price": 8200
+  },
+  {
+    "id": 1775,
+    "product_id": 296,
+    "label": "lista 1/5",
+    "price": 8200
+  },
+  {
+    "id": 1776,
+    "product_id": 296,
+    "label": "Lista 26/5",
+    "price": 11000
+  },
+  {
+    "id": 1777,
+    "product_id": 297,
+    "label": "lista 19/02",
+    "price": 9700
+  },
+  {
+    "id": 1778,
+    "product_id": 297,
+    "label": "marzo",
+    "price": 9500
+  },
+  {
+    "id": 1779,
+    "product_id": 297,
+    "label": "lista 14/03",
+    "price": 9500
+  },
+  {
+    "id": 1780,
+    "product_id": 297,
+    "label": "lista 14/04",
+    "price": 9500
+  },
+  {
+    "id": 1781,
+    "product_id": 297,
+    "label": "lista 1/5",
+    "price": 9500
+  },
+  {
+    "id": 1782,
+    "product_id": 297,
+    "label": "Lista 26/5",
+    "price": 14000
+  },
+  {
+    "id": 1783,
+    "product_id": 298,
+    "label": "lista 19/02",
+    "price": 7800
+  },
+  {
+    "id": 1784,
+    "product_id": 298,
+    "label": "marzo",
+    "price": 7600
+  },
+  {
+    "id": 1785,
+    "product_id": 298,
+    "label": "lista 14/03",
+    "price": 7600
+  },
+  {
+    "id": 1786,
+    "product_id": 298,
+    "label": "lista 14/04",
+    "price": 7600
+  },
+  {
+    "id": 1787,
+    "product_id": 298,
+    "label": "lista 1/5",
+    "price": 7600
+  },
+  {
+    "id": 1788,
+    "product_id": 298,
+    "label": "Lista 26/5",
+    "price": 11500
+  },
+  {
+    "id": 1789,
+    "product_id": 299,
+    "label": "lista 19/02",
+    "price": 33200
+  },
+  {
+    "id": 1790,
+    "product_id": 299,
+    "label": "marzo",
+    "price": 36200
+  },
+  {
+    "id": 1791,
+    "product_id": 299,
+    "label": "lista 14/03",
+    "price": 36200
+  },
+  {
+    "id": 1792,
+    "product_id": 299,
+    "label": "lista 14/04",
+    "price": 35700
+  },
+  {
+    "id": 1793,
+    "product_id": 299,
+    "label": "lista 1/5",
+    "price": 27200
+  },
+  {
+    "id": 1794,
+    "product_id": 299,
+    "label": "Lista 26/5",
+    "price": 35100
+  },
+  {
+    "id": 1795,
+    "product_id": 300,
+    "label": "lista 19/02",
+    "price": 28000
+  },
+  {
+    "id": 1796,
+    "product_id": 300,
+    "label": "marzo",
+    "price": 31200
+  },
+  {
+    "id": 1797,
+    "product_id": 300,
+    "label": "lista 14/03",
+    "price": 35700
+  },
+  {
+    "id": 1798,
+    "product_id": 300,
+    "label": "lista 14/04",
+    "price": 35700
+  },
+  {
+    "id": 1799,
+    "product_id": 300,
+    "label": "lista 1/5",
+    "price": 31500
+  },
+  {
+    "id": 1800,
+    "product_id": 300,
+    "label": "Lista 26/5",
+    "price": 33400
+  },
+  {
+    "id": 1801,
+    "product_id": 301,
+    "label": "lista 19/02",
+    "price": 28000
+  },
+  {
+    "id": 1802,
+    "product_id": 301,
+    "label": "marzo",
+    "price": 31200
+  },
+  {
+    "id": 1803,
+    "product_id": 301,
+    "label": "lista 14/03",
+    "price": 35700
+  },
+  {
+    "id": 1804,
+    "product_id": 301,
+    "label": "lista 14/04",
+    "price": 35700
+  },
+  {
+    "id": 1805,
+    "product_id": 301,
+    "label": "lista 1/5",
+    "price": 31500
+  },
+  {
+    "id": 1806,
+    "product_id": 301,
+    "label": "Lista 26/5",
+    "price": 33400
+  },
+  {
+    "id": 1807,
+    "product_id": 302,
+    "label": "lista 19/02",
+    "price": 54900
+  },
+  {
+    "id": 1808,
+    "product_id": 302,
+    "label": "marzo",
+    "price": 56700
+  },
+  {
+    "id": 1809,
+    "product_id": 302,
+    "label": "lista 14/03",
+    "price": 57000
+  },
+  {
+    "id": 1810,
+    "product_id": 302,
+    "label": "lista 14/04",
+    "price": 59000
+  },
+  {
+    "id": 1811,
+    "product_id": 302,
+    "label": "lista 1/5",
+    "price": 60800
+  },
+  {
+    "id": 1812,
+    "product_id": 302,
+    "label": "Lista 26/5",
+    "price": 61000
+  },
+  {
+    "id": 1813,
+    "product_id": 303,
+    "label": "lista 19/02",
+    "price": 83500
+  },
+  {
+    "id": 1814,
+    "product_id": 303,
+    "label": "marzo",
+    "price": 8690
+  },
+  {
+    "id": 1815,
+    "product_id": 303,
+    "label": "lista 14/03",
+    "price": 87400
+  },
+  {
+    "id": 1816,
+    "product_id": 303,
+    "label": "lista 14/04",
+    "price": 91200
+  },
+  {
+    "id": 1817,
+    "product_id": 303,
+    "label": "lista 1/5",
+    "price": 92900
+  },
+  {
+    "id": 1818,
+    "product_id": 303,
+    "label": "Lista 26/5",
+    "price": 93400
+  },
+  {
+    "id": 1819,
+    "product_id": 304,
+    "label": "lista 19/02",
+    "price": 101700
+  },
+  {
+    "id": 1820,
+    "product_id": 304,
+    "label": "marzo",
+    "price": 105100
+  },
+  {
+    "id": 1821,
+    "product_id": 304,
+    "label": "lista 14/03",
+    "price": 105700
+  },
+  {
+    "id": 1822,
+    "product_id": 304,
+    "label": "lista 14/04",
+    "price": 109500
+  },
+  {
+    "id": 1823,
+    "product_id": 304,
+    "label": "lista 1/5",
+    "price": 112900
+  },
+  {
+    "id": 1824,
+    "product_id": 304,
+    "label": "Lista 26/5",
+    "price": 113500
+  },
+  {
+    "id": 1825,
+    "product_id": 305,
+    "label": "lista 19/02",
+    "price": 118400
+  },
+  {
+    "id": 1826,
+    "product_id": 305,
+    "label": "marzo",
+    "price": 160900
+  },
+  {
+    "id": 1827,
+    "product_id": 305,
+    "label": "lista 14/03",
+    "price": 161900
+  },
+  {
+    "id": 1828,
+    "product_id": 305,
+    "label": "lista 14/04",
+    "price": 167700
+  },
+  {
+    "id": 1829,
+    "product_id": 305,
+    "label": "lista 1/5",
+    "price": 172900
+  },
+  {
+    "id": 1830,
+    "product_id": 305,
+    "label": "Lista 26/5",
+    "price": 173600
+  },
+  {
+    "id": 1831,
+    "product_id": 306,
+    "label": "lista 19/02",
+    "price": 103700
+  },
+  {
+    "id": 1832,
+    "product_id": 306,
+    "label": "marzo",
+    "price": 97800
+  },
+  {
+    "id": 1833,
+    "product_id": 306,
+    "label": "lista 14/03",
+    "price": 99500
+  },
+  {
+    "id": 1834,
+    "product_id": 306,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1835,
+    "product_id": 306,
+    "label": "lista 1/5",
+    "price": 0
+  },
+  {
+    "id": 1836,
+    "product_id": 306,
+    "label": "Lista 26/5",
+    "price": 0
+  },
+  {
+    "id": 1837,
+    "product_id": 307,
+    "label": "lista 19/02",
+    "price": 81600
+  },
+  {
+    "id": 1838,
+    "product_id": 307,
+    "label": "marzo",
+    "price": 82900
+  },
+  {
+    "id": 1839,
+    "product_id": 307,
+    "label": "lista 14/03",
+    "price": 83400
+  },
+  {
+    "id": 1840,
+    "product_id": 307,
+    "label": "lista 14/04",
+    "price": 86100
+  },
+  {
+    "id": 1841,
+    "product_id": 307,
+    "label": "lista 1/5",
+    "price": 87700
+  },
+  {
+    "id": 1842,
+    "product_id": 307,
+    "label": "Lista 26/5",
+    "price": 84300
+  },
+  {
+    "id": 1843,
+    "product_id": 308,
+    "label": "lista 19/02",
+    "price": 88600
+  },
+  {
+    "id": 1844,
+    "product_id": 308,
+    "label": "marzo",
+    "price": 94900
+  },
+  {
+    "id": 1845,
+    "product_id": 308,
+    "label": "lista 14/03",
+    "price": 107700
+  },
+  {
+    "id": 1846,
+    "product_id": 308,
+    "label": "lista 14/04",
+    "price": 108700
+  },
+  {
+    "id": 1847,
+    "product_id": 308,
+    "label": "lista 1/5",
+    "price": 100300
+  },
+  {
+    "id": 1848,
+    "product_id": 308,
+    "label": "Lista 26/5",
+    "price": 94400
+  },
+  {
+    "id": 1849,
+    "product_id": 309,
+    "label": "lista 19/02",
+    "price": 86900
+  },
+  {
+    "id": 1850,
+    "product_id": 309,
+    "label": "marzo",
+    "price": 88700
+  },
+  {
+    "id": 1851,
+    "product_id": 309,
+    "label": "lista 14/03",
+    "price": 90200
+  },
+  {
+    "id": 1852,
+    "product_id": 309,
+    "label": "lista 14/04",
+    "price": 92300
+  },
+  {
+    "id": 1853,
+    "product_id": 309,
+    "label": "lista 1/5",
+    "price": 95600
+  },
+  {
+    "id": 1854,
+    "product_id": 309,
+    "label": "Lista 26/5",
+    "price": 96000
+  },
+  {
+    "id": 1855,
+    "product_id": 310,
+    "label": "lista 19/02",
+    "price": 82300
+  },
+  {
+    "id": 1856,
+    "product_id": 310,
+    "label": "marzo",
+    "price": 83900
+  },
+  {
+    "id": 1857,
+    "product_id": 310,
+    "label": "lista 14/03",
+    "price": 84400
+  },
+  {
+    "id": 1858,
+    "product_id": 310,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1859,
+    "product_id": 310,
+    "label": "lista 1/5",
+    "price": 90500
+  },
+  {
+    "id": 1860,
+    "product_id": 310,
+    "label": "Lista 26/5",
+    "price": 91000
+  },
+  {
+    "id": 1861,
+    "product_id": 311,
+    "label": "lista 19/02",
+    "price": 64000
+  },
+  {
+    "id": 1862,
+    "product_id": 311,
+    "label": "marzo",
+    "price": 64000
+  },
+  {
+    "id": 1863,
+    "product_id": 311,
+    "label": "lista 14/03",
+    "price": 65400
+  },
+  {
+    "id": 1864,
+    "product_id": 311,
+    "label": "lista 14/04",
+    "price": 65400
+  },
+  {
+    "id": 1865,
+    "product_id": 311,
+    "label": "lista 1/5",
+    "price": 66700
+  },
+  {
+    "id": 1866,
+    "product_id": 311,
+    "label": "Lista 26/5",
+    "price": 67400
+  },
+  {
+    "id": 1867,
+    "product_id": 312,
+    "label": "lista 19/02",
+    "price": 36300
+  },
+  {
+    "id": 1868,
+    "product_id": 312,
+    "label": "marzo",
+    "price": 37300
+  },
+  {
+    "id": 1869,
+    "product_id": 312,
+    "label": "lista 14/03",
+    "price": 37500
+  },
+  {
+    "id": 1870,
+    "product_id": 312,
+    "label": "lista 14/04",
+    "price": 38800
+  },
+  {
+    "id": 1871,
+    "product_id": 312,
+    "label": "lista 1/5",
+    "price": 39900
+  },
+  {
+    "id": 1872,
+    "product_id": 312,
+    "label": "Lista 26/5",
+    "price": 39900
+  },
+  {
+    "id": 1873,
+    "product_id": 313,
+    "label": "lista 19/02",
+    "price": 33200
+  },
+  {
+    "id": 1874,
+    "product_id": 313,
+    "label": "marzo",
+    "price": 36200
+  },
+  {
+    "id": 1875,
+    "product_id": 313,
+    "label": "lista 14/03",
+    "price": 36200
+  },
+  {
+    "id": 1876,
+    "product_id": 313,
+    "label": "lista 14/04",
+    "price": 35700
+  },
+  {
+    "id": 1877,
+    "product_id": 313,
+    "label": "lista 1/5",
+    "price": 27200
+  },
+  {
+    "id": 1878,
+    "product_id": 313,
+    "label": "Lista 26/5",
+    "price": 35100
+  },
+  {
+    "id": 1879,
+    "product_id": 314,
+    "label": "lista 19/02",
+    "price": 10300
+  },
+  {
+    "id": 1880,
+    "product_id": 314,
+    "label": "marzo",
+    "price": 10400
+  },
+  {
+    "id": 1881,
+    "product_id": 314,
+    "label": "lista 14/03",
+    "price": 10700
+  },
+  {
+    "id": 1882,
+    "product_id": 314,
+    "label": "lista 14/04",
+    "price": 11400
+  },
+  {
+    "id": 1883,
+    "product_id": 314,
+    "label": "lista 1/5",
+    "price": 11800
+  },
+  {
+    "id": 1884,
+    "product_id": 314,
+    "label": "Lista 26/5",
+    "price": 12100
+  },
+  {
+    "id": 1885,
+    "product_id": 315,
+    "label": "lista 19/02",
+    "price": 29300
+  },
+  {
+    "id": 1886,
+    "product_id": 315,
+    "label": "marzo",
+    "price": 30300
+  },
+  {
+    "id": 1887,
+    "product_id": 315,
+    "label": "lista 14/03",
+    "price": 31200
+  },
+  {
+    "id": 1888,
+    "product_id": 315,
+    "label": "lista 14/04",
+    "price": 33200
+  },
+  {
+    "id": 1889,
+    "product_id": 315,
+    "label": "lista 1/5",
+    "price": 34300
+  },
+  {
+    "id": 1890,
+    "product_id": 315,
+    "label": "Lista 26/5",
+    "price": 34900
+  },
+  {
+    "id": 1891,
+    "product_id": 316,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1892,
+    "product_id": 316,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1893,
+    "product_id": 316,
+    "label": "lista 14/03",
+    "price": 20300
+  },
+  {
+    "id": 1894,
+    "product_id": 316,
+    "label": "lista 14/04",
+    "price": 20500
+  },
+  {
+    "id": 1895,
+    "product_id": 316,
+    "label": "lista 1/5",
+    "price": 22100
+  },
+  {
+    "id": 1896,
+    "product_id": 316,
+    "label": "Lista 26/5",
+    "price": 17000
+  },
+  {
+    "id": 1897,
+    "product_id": 317,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1898,
+    "product_id": 317,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1899,
+    "product_id": 317,
+    "label": "lista 14/03",
+    "price": 58200
+  },
+  {
+    "id": 1900,
+    "product_id": 317,
+    "label": "lista 14/04",
+    "price": 58800
+  },
+  {
+    "id": 1901,
+    "product_id": 317,
+    "label": "lista 1/5",
+    "price": 63300
+  },
+  {
+    "id": 1902,
+    "product_id": 317,
+    "label": "Lista 26/5",
+    "price": 56300
+  },
+  {
+    "id": 1903,
+    "product_id": 318,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1904,
+    "product_id": 318,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1905,
+    "product_id": 318,
+    "label": "lista 14/03",
+    "price": 50800
+  },
+  {
+    "id": 1906,
+    "product_id": 318,
+    "label": "lista 14/04",
+    "price": 51200
+  },
+  {
+    "id": 1907,
+    "product_id": 318,
+    "label": "lista 1/5",
+    "price": 49900
+  },
+  {
+    "id": 1908,
+    "product_id": 318,
+    "label": "Lista 26/5",
+    "price": 46100
+  },
+  {
+    "id": 1909,
+    "product_id": 319,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1910,
+    "product_id": 319,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1911,
+    "product_id": 319,
+    "label": "lista 14/03",
+    "price": 60100
+  },
+  {
+    "id": 1912,
+    "product_id": 319,
+    "label": "lista 14/04",
+    "price": 62100
+  },
+  {
+    "id": 1913,
+    "product_id": 319,
+    "label": "lista 1/5",
+    "price": 64200
+  },
+  {
+    "id": 1914,
+    "product_id": 319,
+    "label": "Lista 26/5",
+    "price": 64600
+  },
+  {
+    "id": 1915,
+    "product_id": 320,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1916,
+    "product_id": 320,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1917,
+    "product_id": 320,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1918,
+    "product_id": 320,
+    "label": "lista 14/04",
+    "price": 14600
+  },
+  {
+    "id": 1919,
+    "product_id": 320,
+    "label": "lista 1/5",
+    "price": 14900
+  },
+  {
+    "id": 1920,
+    "product_id": 320,
+    "label": "Lista 26/5",
+    "price": 8000
+  },
+  {
+    "id": 1921,
+    "product_id": 321,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1922,
+    "product_id": 321,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1923,
+    "product_id": 321,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1924,
+    "product_id": 321,
+    "label": "lista 14/04",
+    "price": 10500
+  },
+  {
+    "id": 1925,
+    "product_id": 321,
+    "label": "lista 1/5",
+    "price": 10500
+  },
+  {
+    "id": 1926,
+    "product_id": 321,
+    "label": "Lista 26/5",
+    "price": 10500
+  },
+  {
+    "id": 1927,
+    "product_id": 322,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1928,
+    "product_id": 322,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1929,
+    "product_id": 322,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1930,
+    "product_id": 322,
+    "label": "lista 14/04",
+    "price": 29900
+  },
+  {
+    "id": 1931,
+    "product_id": 322,
+    "label": "lista 1/5",
+    "price": 29900
+  },
+  {
+    "id": 1932,
+    "product_id": 322,
+    "label": "Lista 26/5",
+    "price": 29900
+  },
+  {
+    "id": 1933,
+    "product_id": 323,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1934,
+    "product_id": 323,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1935,
+    "product_id": 323,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1936,
+    "product_id": 323,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1937,
+    "product_id": 323,
+    "label": "lista 1/5",
+    "price": 19200
+  },
+  {
+    "id": 1938,
+    "product_id": 323,
+    "label": "Lista 26/5",
+    "price": 19200
+  },
+  {
+    "id": 1939,
+    "product_id": 324,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1940,
+    "product_id": 324,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1941,
+    "product_id": 324,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1942,
+    "product_id": 324,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1943,
+    "product_id": 324,
+    "label": "lista 1/5",
+    "price": 17900
+  },
+  {
+    "id": 1944,
+    "product_id": 324,
+    "label": "Lista 26/5",
+    "price": 12000
+  },
+  {
+    "id": 1945,
+    "product_id": 325,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1946,
+    "product_id": 325,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1947,
+    "product_id": 325,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1948,
+    "product_id": 325,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1949,
+    "product_id": 325,
+    "label": "lista 1/5",
+    "price": 49100
+  },
+  {
+    "id": 1950,
+    "product_id": 325,
+    "label": "Lista 26/5",
+    "price": 32400
+  },
+  {
+    "id": 1951,
+    "product_id": 326,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1952,
+    "product_id": 326,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1953,
+    "product_id": 326,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1954,
+    "product_id": 326,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1955,
+    "product_id": 326,
+    "label": "lista 1/5",
+    "price": 15100
+  },
+  {
+    "id": 1956,
+    "product_id": 326,
+    "label": "Lista 26/5",
+    "price": 15100
+  },
+  {
+    "id": 1957,
+    "product_id": 327,
+    "label": "lista 19/02",
+    "price": 0
+  },
+  {
+    "id": 1958,
+    "product_id": 327,
+    "label": "marzo",
+    "price": 0
+  },
+  {
+    "id": 1959,
+    "product_id": 327,
+    "label": "lista 14/03",
+    "price": 0
+  },
+  {
+    "id": 1960,
+    "product_id": 327,
+    "label": "lista 14/04",
+    "price": 0
+  },
+  {
+    "id": 1961,
+    "product_id": 327,
+    "label": "lista 1/5",
+    "price": 8800
+  },
+  {
+    "id": 1962,
+    "product_id": 327,
+    "label": "Lista 26/5",
+    "price": 8800
+  }
+]

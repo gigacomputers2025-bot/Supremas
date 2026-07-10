@@ -1,116 +1,142 @@
 import { Router } from 'express';
-import { getDb } from '../database.js';
+import { readFileSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const DATA_DIR = join(__dirname, '..', '..', '..', 'data');
 
 const router = Router();
 
+function load(name) {
+  try { return JSON.parse(readFileSync(join(DATA_DIR, `${name}.json`), 'utf8')); }
+  catch { return []; }
+}
+
 router.get('/', (req, res) => {
   try {
-    const db = getDb();
+    const products = load('products');
+    const customers = load('customers');
+    const orders = load('orders');
+    const payments = load('payment_methods');
+    const channels = load('sales_channels');
+    const zones = load('delivery_zones');
 
-    // Counts
-    const prodCount = db.prepare(`SELECT COUNT(*) as c FROM products`).get().c;
-    const prodMinorista = db.prepare(`SELECT COUNT(*) as c FROM products WHERE list_type = 'Minorista'`).get().c;
-    const prodMayorista = db.prepare(`SELECT COUNT(*) as c FROM products WHERE list_type = 'Mayorista'`).get().c;
-    const catCount = db.prepare(`SELECT COUNT(DISTINCT category) as c FROM products`).get().c;
-    const customerCount = db.prepare(`SELECT COUNT(*) as c FROM customers`).get().c;
-    const orderCount = db.prepare(`SELECT COUNT(*) as c FROM orders`).get().c;
-    const paymentCount = db.prepare(`SELECT COUNT(*) as c FROM payment_methods`).get().c;
-    const channelCount = db.prepare(`SELECT COUNT(*) as c FROM sales_channels`).get().c;
-    const zoneCount = db.prepare(`SELECT COUNT(*) as c FROM delivery_zones`).get().c;
+    const prodCount = products.length;
+    const prodMinorista = products.filter(p => p.list_type === 'Minorista').length;
+    const prodMayorista = products.filter(p => p.list_type === 'Mayorista').length;
+    const catCount = [...new Set(products.map(p => p.category))].length;
+    const customerCount = customers.length;
+    const orderCount = orders.length;
+    const paymentCount = payments.length;
+    const channelCount = channels.length;
+    const zoneCount = zones.length;
 
     // Products by category
-    const byCategory = db.prepare(`
-      SELECT category, COUNT(*) as count, list_type
-      FROM products GROUP BY category, list_type ORDER BY count DESC
-    `).all();
+    const byCategory = {};
+    for (const p of products) {
+      const key = `${p.category}::${p.list_type}`;
+      if (!byCategory[key]) byCategory[key] = { category: p.category, list_type: p.list_type, count: 0 };
+      byCategory[key].count++;
+    }
 
     // Orders by day (last 30)
-    const ordersByDay = db.prepare(`
-      SELECT fecha_pedido as day, COUNT(*) as count, SUM(COALESCE(total_pedido,0)) as revenue
-      FROM orders WHERE fecha_pedido != '' AND fecha_pedido IS NOT NULL
-      GROUP BY day ORDER BY day DESC LIMIT 30
-    `).all();
+    const ordersByDay = {};
+    const today = new Date();
+    const validOrders = orders.filter(o => o.fecha_pedido && o.fecha_pedido.trim());
+    for (const o of validOrders) {
+      if (!ordersByDay[o.fecha_pedido]) ordersByDay[o.fecha_pedido] = { day: o.fecha_pedido, count: 0, revenue: 0 };
+      ordersByDay[o.fecha_pedido].count++;
+      ordersByDay[o.fecha_pedido].revenue += Number(o.total_pedido) || 0;
+    }
+    const ordersByDayArr = Object.values(ordersByDay)
+      .sort((a, b) => b.day.localeCompare(a.day))
+      .slice(0, 30);
 
     // Revenue stats
-    const revenueStats = db.prepare(`
-      SELECT
-        SUM(COALESCE(total_pedido,0)) as total_revenue,
-        SUM(COALESCE(cobro_real,0)) as total_collected,
-        AVG(COALESCE(total_pedido,0)) as avg_order,
-        COUNT(*) as total_orders
-      FROM orders
-    `).get();
+    let totalRevenue = 0, totalCollected = 0;
+    for (const o of orders) {
+      totalRevenue += Number(o.total_pedido) || 0;
+      totalCollected += Number(o.cobro_real) || 0;
+    }
+    const avgOrder = orderCount > 0 ? totalRevenue / orderCount : 0;
 
-    // Top products sold
-    const topProducts = [];
+    // Top products
+    const prodCounts = {};
+    const prodRevenues = {};
     for (let i = 1; i <= 7; i++) {
-      const rows = db.prepare(`
-        SELECT producto${i} as name, COUNT(*) as count, SUM(COALESCE(valor_prod${i},0)) as revenue
-        FROM orders WHERE producto${i} != '' AND producto${i} IS NOT NULL
-        GROUP BY name ORDER BY count DESC LIMIT 10
-      `).all();
-      for (const r of rows) {
-        const existing = topProducts.find(t => t.name === r.name);
-        if (existing) {
-          existing.count += r.count;
-          existing.revenue += r.revenue;
-        } else {
-          topProducts.push(r);
+      for (const o of orders) {
+        const name = o[`producto${i}`];
+        if (name && String(name).trim()) {
+          if (!prodCounts[name]) { prodCounts[name] = 0; prodRevenues[name] = 0; }
+          prodCounts[name]++;
+          prodRevenues[name] += Number(o[`valor_prod${i}`]) || 0;
         }
       }
     }
-    topProducts.sort((a, b) => b.count - a.count);
-    const top10 = topProducts.slice(0, 10);
+    const topProducts = Object.entries(prodCounts)
+      .map(([name, count]) => ({ name, count, revenue: prodRevenues[name] }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10);
 
-    // Revenue by payment method
-    const byPayment = db.prepare(`
-      SELECT medio_cobro as name, COUNT(*) as count, SUM(COALESCE(total_pedido,0)) as revenue
-      FROM orders WHERE medio_cobro != '' AND medio_cobro IS NOT NULL
-      GROUP BY name ORDER BY revenue DESC
-    `).all();
+    // By payment method
+    const byPayment = {};
+    for (const o of orders) {
+      const name = o.medio_cobro;
+      if (name && String(name).trim()) {
+        if (!byPayment[name]) byPayment[name] = { name, count: 0, revenue: 0 };
+        byPayment[name].count++;
+        byPayment[name].revenue += Number(o.total_pedido) || 0;
+      }
+    }
 
-    // Orders by channel
-    const byChannel = db.prepare(`
-      SELECT canal_venta as name, COUNT(*) as count, SUM(COALESCE(total_pedido,0)) as revenue
-      FROM orders WHERE canal_venta != '' AND canal_venta IS NOT NULL
-      GROUP BY name ORDER BY count DESC
-    `).all();
+    // By channel
+    const byChannel = {};
+    for (const o of orders) {
+      const name = o.canal_venta;
+      if (name && String(name).trim()) {
+        if (!byChannel[name]) byChannel[name] = { name, count: 0, revenue: 0 };
+        byChannel[name].count++;
+        byChannel[name].revenue += Number(o.total_pedido) || 0;
+      }
+    }
 
-    // Orders by neighborhood
-    const byNeighborhood = db.prepare(`
-      SELECT barrio as name, COUNT(*) as count, SUM(COALESCE(total_pedido,0)) as revenue
-      FROM orders WHERE barrio != '' AND barrio IS NOT NULL
-      GROUP BY name ORDER BY count DESC LIMIT 15
-    `).all();
+    // By neighborhood
+    const byNeighborhood = {};
+    for (const o of orders) {
+      const name = o.barrio;
+      if (name && String(name).trim()) {
+        if (!byNeighborhood[name]) byNeighborhood[name] = { name, count: 0, revenue: 0 };
+        byNeighborhood[name].count++;
+        byNeighborhood[name].revenue += Number(o.total_pedido) || 0;
+      }
+    }
 
-    // Monthly revenue
-    const byMonth = db.prepare(`
-      SELECT COALESCE(mes,'') as name, SUM(COALESCE(total_pedido,0)) as revenue, COUNT(*) as count
-      FROM orders GROUP BY name ORDER BY name
-    `).all();
+    // By month
+    const byMonth = {};
+    for (const o of orders) {
+      const name = o.mes ? String(o.mes).trim() : '';
+      if (name) {
+        if (!byMonth[name]) byMonth[name] = { name, count: 0, revenue: 0 };
+        byMonth[name].count++;
+        byMonth[name].revenue += Number(o.total_pedido) || 0;
+      }
+    }
 
     res.json({
       counts: {
-        products: prodCount,
-        minorista: prodMinorista,
-        mayorista: prodMayorista,
-        categories: catCount,
-        customers: customerCount,
-        orders: orderCount,
-        payments: paymentCount,
-        channels: channelCount,
-        zones: zoneCount,
-        revenue: revenueStats.total_revenue || 0,
-        collected: revenueStats.total_collected || 0,
-        avgOrder: revenueStats.avg_order || 0,
+        products: prodCount, minorista: prodMinorista, mayorista: prodMayorista,
+        categories: catCount, customers: customerCount, orders: orderCount,
+        payments: paymentCount, channels: channelCount, zones: zoneCount,
+        revenue: totalRevenue, collected: totalCollected, avgOrder: Math.round(avgOrder * 100) / 100,
       },
-      byCategory,
-      ordersByDay,
-      topProducts: top10,
-      byPayment,
-      byChannel,
-      byNeighborhood,
-      byMonth,
+      byCategory: Object.values(byCategory).sort((a, b) => b.count - a.count),
+      ordersByDay: ordersByDayArr,
+      topProducts,
+      byPayment: Object.values(byPayment).sort((a, b) => b.revenue - a.revenue),
+      byChannel: Object.values(byChannel).sort((a, b) => b.count - a.count),
+      byNeighborhood: Object.values(byNeighborhood).sort((a, b) => b.count - a.count).slice(0, 15),
+      byMonth: Object.values(byMonth).sort((a, b) => a.name.localeCompare(b.name)),
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
