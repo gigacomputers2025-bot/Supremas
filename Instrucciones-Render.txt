@@ -1,0 +1,77 @@
+=========================================================
+  INSTRUCCIONES PARA DEPLOY EN RENDER.COM
+  Supremas - Panel de Gestión
+=========================================================
+
+1. CREAR CUENTA EN RENDER
+   - Ir a https://render.com
+   - Registrarse con GitHub (botón "Sign up with GitHub")
+
+2. CONECTAR REPOSITORIO
+   - Click "New +" > "Web Service"
+   - Conectar GitHub
+   - Seleccionar el repo: gigacomputers2025-bot/Supremas
+   - Click "Connect"
+
+3. CONFIGURAR EL SERVICIO
+   - Name: supremas (o el nombre que quieras)
+   - Region: Frankfurt (EU) o la más cercana
+   - Branch: main
+   - Runtime: Node
+   - Build Command: npm install && npm run build
+   - Start Command: npm start
+   - Plan: Free ($0/mes)
+
+4. CREAR SERVICIO
+   - Click "Create Web Service"
+   - Esperar 2-3 minutos a que construya y deploye
+   - La URL será algo como: https://supremas.onrender.com
+
+5. ACCEDER A LA APP
+   - En el dashboard de Render, click en el dominio
+   - La app está completamente funcional:
+     * Productos (con importación del Excel)
+     * Clientes
+     * Medios de Pago, Canales, Zonas
+     * Pedidos (CRUD completo)
+     * Recuento y Estadísticas
+     * Panel de Configuración con GitHub + Backups
+
+=========================================================
+  IMPORTANTE (Plan Gratuito)
+=========================================================
+
+- El servicio se "duerme" después de 15 min sin uso
+- Al entrar de nuevo, tarda ~30-60 segundos en despertar
+- Los datos persisten mientras Render no reinicie el disco
+- Para datos 100% persistentes, usa "Exportar Excel" y
+  descarga el archivo periódicamente
+
+=========================================================
+  USO LOCAL (alternativa)
+=========================================================
+
+Si preferís correrlo en tu PC:
+
+Modo Desarrollo (con hot reload):
+  - Ejecutar: iniciar.bat  → elegir modo 1
+  - Frontend: http://localhost:5173
+  - Backend:  http://localhost:3001
+
+Modo Producción:
+  - Ejecutar: iniciar.bat  → elegir modo 2
+  - Todo en:  http://localhost:3001
+
+=========================================================
+  GIT (para actualizar el deploy)
+=========================================================
+
+Después de hacer cambios localmente:
+
+  git add .
+  git commit -m "descripción de cambios"
+  git push
+
+Render detecta el push y redeploya automáticamente (~2 min).
+
+=========================================================

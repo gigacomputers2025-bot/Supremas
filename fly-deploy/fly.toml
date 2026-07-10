@@ -1,0 +1,21 @@
+# fly.toml — Configuración para Fly.io
+# Copiar este archivo a la raíz del proyecto antes de hacer fly deploy
+
+app = "supremas"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  DB_PATH = "/data/supremas.db"
+
+[http_service]
+  internal_port = 3001
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[mounts]]
+  source = "supremas_data"
+  destination = "/data"
