@@ -48,7 +48,7 @@ router.post('/sync-data', async (req, res) => {
     if (!token) return res.status(400).json({ error: 'GitHub token not configured' });
     if (!repo) return res.status(400).json({ error: 'GitHub repo not configured (format: owner/repo)' });
 
-    const tables = ['categories', 'combo_items', 'customers', 'delivery_zones', 'orders', 'payment_methods', 'price_list_labels', 'price_lists', 'products', 'sales_channels', 'settings'];
+    const tables = ['categories', 'combo_items', 'customers', 'delivery_zones', 'orders', 'payment_methods', 'price_list_labels', 'price_lists', 'products', 'repartidores', 'sales_channels', 'settings'];
     const results = [];
 
     // Cache SHAs for all files first
@@ -120,7 +120,7 @@ router.post('/sync', async (req, res) => {
     if (!password) return res.status(400).json({ error: 'Backup password not configured' });
 
     // Create backup data
-    const tables = ['products', 'price_lists', 'payment_methods', 'sales_channels', 'delivery_zones', 'customers', 'orders', 'settings'];
+    const tables = ['products', 'price_lists', 'payment_methods', 'sales_channels', 'delivery_zones', 'customers', 'orders', 'repartidores', 'settings'];
     const backup = {};
     for (const table of tables) {
       try { backup[table] = db.prepare(`SELECT * FROM ${table}`).all(); } catch (e) { backup[table] = []; }

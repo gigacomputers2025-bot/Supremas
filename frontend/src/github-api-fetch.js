@@ -13,7 +13,8 @@ const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 
 export async function githubApiFetch(url, options) {
   const path = url.replace(/^\/api\//, '');
-  const parts = path.split('/');
+  const pathNoQuery = path.split('?')[0];
+  const parts = pathNoQuery.split('/');
   const resource = parts[0];
   const table = TABLE_MAP[resource];
   const id = parts[1] ? Number(parts[1]) : null;
@@ -111,6 +112,18 @@ export async function githubApiFetch(url, options) {
           prices: prices.filter(pr => pr.product_id === p.id),
           combo_items: combos.filter(c => c.combo_id === p.id)
         }));
+      } else if (resource === 'repartidores') {
+        const zones = await getAll('delivery_zones');
+        const unique = [...new Set(zones.map(z => z.deliverer).filter(Boolean))];
+        data = unique.map((name, i) => ({ id: i + 1, name, phone: '', vehicle: '', active: true }));
+      } else if (resource === 'customers' && params.get('search')) {
+        const s = params.get('search').toLowerCase();
+        const all = await getAll(table);
+        data = all.filter(c =>
+          (c.name || '').toLowerCase().includes(s) ||
+          (c.dni || '').includes(s) ||
+          (c.celular || '').includes(s)
+        );
       } else {
         data = await getAll(table);
       }
