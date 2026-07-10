@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getDb } from '../database.js';
+import { getDb, getToken } from '../database.js';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
@@ -35,6 +35,74 @@ router.post('/test', async (req, res) => {
   }
 });
 
+// Sync all data JSON files directly to GitHub repo
+router.post('/sync-data', async (req, res) => {
+  try {
+    const db = getDb();
+    const allSettings = db.prepare(`SELECT * FROM settings`).all();
+    const config = {};
+    for (const s of allSettings) config[s.key] = s.value;
+
+    const token = getToken() || config.github_token;
+    const repo = config.github_repo;
+    if (!token) return res.status(400).json({ error: 'GitHub token not configured' });
+    if (!repo) return res.status(400).json({ error: 'GitHub repo not configured (format: owner/repo)' });
+
+    const tables = ['categories', 'combo_items', 'customers', 'delivery_zones', 'orders', 'payment_methods', 'price_list_labels', 'price_lists', 'products', 'sales_channels', 'settings'];
+    const results = [];
+
+    // Cache SHAs for all files first
+    const shaCache = {};
+    for (const table of tables) {
+      try {
+        const url = `https://api.github.com/repos/${repo}/contents/data/${table}.json`;
+        const getRes = await fetch(url, {
+          headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' }
+        });
+        if (getRes.ok) {
+          const fileInfo = await getRes.json();
+          shaCache[table] = fileInfo.sha;
+        }
+      } catch {}
+    }
+
+    for (const table of tables) {
+      try {
+        const data = db.prepare(`SELECT * FROM ${table}`).all();
+        const content = Buffer.from(JSON.stringify(data, null, 2)).toString('base64');
+
+        const url = `https://api.github.com/repos/${repo}/contents/data/${table}.json`;
+        const putBody = {
+          message: `Sync ${table} from Supremas`,
+          content,
+          sha: shaCache[table] || undefined
+        };
+
+        const putRes = await fetch(url, {
+          method: 'PUT',
+          headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+          body: JSON.stringify(putBody)
+        });
+
+        if (putRes.ok) {
+          const updated = await putRes.json();
+          shaCache[table] = updated.content?.sha;
+          results.push({ table, status: 'ok', size: data.length });
+        } else {
+          const err = await putRes.json();
+          results.push({ table, status: 'error', message: `${putRes.status}: ${err.message || 'Unknown'}` });
+        }
+      } catch (e) {
+        results.push({ table, status: 'error', message: e.message });
+      }
+    }
+
+    res.json({ success: true, results });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Full sync: create encrypted backup and push to GitHub as release
 router.post('/sync', async (req, res) => {
   try {
@@ -43,7 +111,7 @@ router.post('/sync', async (req, res) => {
     const config = {};
     for (const s of settings) config[s.key] = s.value;
 
-    const token = config.github_token;
+    const token = getToken() || config.github_token;
     const repo = config.github_repo;
     const password = config.backup_password;
 

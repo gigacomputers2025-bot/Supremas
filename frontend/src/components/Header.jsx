@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Header({ activeTab, onTabChange, onExcelExport, onExcelImport, onSeedData, onSettings, hiddenTabs = [], onBackHome, showActions = true }) {
+export default function Header({ activeTab, onTabChange, onExcelExport, onExcelImport, onSeedData, onSettings, onSyncToGitHub, hiddenTabs = [], onBackHome, showActions = true }) {
   const ALL_TABS = [
     { key: 'products', label: 'Productos' },
     { key: 'customers', label: 'Clientes' },
@@ -72,6 +72,7 @@ export default function Header({ activeTab, onTabChange, onExcelExport, onExcelI
               <ActionButton label="Datos de Prueba" icon="🧪" onClick={onSeedData} style={{ borderColor: '#7c3aed', color: '#a78bfa' }} />
               <ActionButton label="Exportar Excel" icon="📥" onClick={onExcelExport} />
               <ActionButton label="Importar Excel" icon="📤" onClick={onExcelImport} />
+              {onSyncToGitHub && <ActionButton label="Sincronizar con GitHub" icon="☁️" onClick={onSyncToGitHub} style={{ borderColor: '#059669', color: '#34d399' }} />}
             </>
           )}
           {showActions && (

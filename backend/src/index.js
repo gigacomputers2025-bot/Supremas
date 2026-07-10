@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { readFileSync, existsSync } from 'fs';
 import { initDatabase, getDb, setGithubToken } from './database.js';
 
 import productsRouter from './routes/products.js';
@@ -35,13 +36,23 @@ app.use(express.static(frontendDist));
 // Initialize JSON data
 initDatabase();
 
-// Set GitHub token from settings if available
+// Set GitHub token from settings or fallback file
 try {
   const db = getDb();
   const tokenSetting = db.prepare(`SELECT value FROM settings WHERE key = 'github_token'`).get();
   if (tokenSetting && tokenSetting.value) {
     setGithubToken(tokenSetting.value);
     console.log('GitHub token loaded from settings');
+  } else {
+    // Fallback: read from github-token.txt
+    const tokenFile = join(__dirname, '..', '..', 'github-token.txt');
+    if (existsSync(tokenFile)) {
+      const fileToken = readFileSync(tokenFile, 'utf8').trim();
+      if (fileToken) {
+        setGithubToken(fileToken);
+        console.log('GitHub token loaded from github-token.txt');
+      }
+    }
   }
 } catch (e) {
   console.log('No GitHub token in settings');

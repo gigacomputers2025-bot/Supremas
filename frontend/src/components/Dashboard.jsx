@@ -77,6 +77,25 @@ export default function Dashboard() {
     } catch { toast.error('Error de conexión al sembrar datos'); }
   };
 
+  const handleSyncToGitHub = async () => {
+    if (!confirm('¿Subir todos los datos a GitHub? Se actualizarán los archivos data/*.json en el repositorio.')) return;
+    try {
+      const res = await fetch(`${API_BASE}/api/github/sync-data`, { method: 'POST' });
+      const data = await res.json();
+      if (data.success) {
+        const ok = data.results.filter(r => r.status === 'ok').length;
+        const err = data.results.filter(r => r.status === 'error').length;
+        toast.success(`Sincronizado: ${ok} tablas ok${err ? `, ${err} errores` : ''}`);
+        if (data.results.some(r => r.status === 'error')) {
+          const errors = data.results.filter(r => r.status === 'error').map(r => `${r.table}: ${r.message}`).join('\n');
+          console.error('Sync errors:', errors);
+        }
+      } else {
+        toast.error(`Error: ${data.error}`);
+      }
+    } catch (e) { toast.error('Error de conexión al sincronizar'); }
+  };
+
   if (mode === 'home') {
     return (
       <div style={{ position: 'relative' }}>
@@ -115,6 +134,7 @@ export default function Dashboard() {
         onExcelExport={handleExcelExport}
         onExcelImport={handleExcelImport}
         onSeedData={handleSeedData}
+        onSyncToGitHub={handleSyncToGitHub}
         onSettings={() => handleTabChange('settings')}
         hiddenTabs={hiddenTabs}
         onBackHome={handleBackHome}
