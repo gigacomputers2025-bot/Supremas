@@ -19,6 +19,13 @@ export async function githubApiFetch(url, options) {
   const id = parts[1] ? Number(parts[1]) : null;
   const method = (options?.method || 'GET').toUpperCase();
 
+  // Health check for backup endpoint
+  if (resource === 'backups' && parts[1] === 'health') {
+    return new Response(JSON.stringify({ status: 'ok', mode: 'github-pages' }), {
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
+
   // Stats
   if (resource === 'stats') {
     return new Response(JSON.stringify(await computeStats()), {
@@ -26,8 +33,8 @@ export async function githubApiFetch(url, options) {
     });
   }
 
-  // Excel/seed/recuento/envios - not supported on GitHub Pages
-  if (['excel', 'seed', 'recuento', 'envios'].includes(resource)) {
+  // Excel/seed/recuento/envios/backups - not fully supported on GitHub Pages
+  if (['excel', 'seed', 'recuento', 'envios', 'backups'].includes(resource)) {
     const msg = resource === 'recuento' || resource === 'envios' ? 'feature' : 'function';
     throw new Error(`${resource} solo disponible en modo local`);
   }
