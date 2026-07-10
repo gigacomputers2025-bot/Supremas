@@ -173,103 +173,83 @@ async function computeStats() {
   const products = await getAll('products');
   const customers = await getAll('customers');
   const orders = await getAll('orders');
-  const payments = await getAll('payment_methods');
-  const channels = await getAll('sales_channels');
-  const zones = await getAll('delivery_zones');
-  const categories = await getAll('categories');
 
-  // Count stats
   const prodCount = products.length;
   const prodMinorista = products.filter(p => p.list_type === 'Minorista').length;
   const prodMayorista = products.filter(p => p.list_type === 'Mayorista').length;
   const catCount = [...new Set(products.map(p => p.category))].length;
   const customerCount = customers.length;
   const orderCount = orders.length;
-  const paymentCount = payments.length;
-  const channelCount = channels.length;
-  const zoneCount = zones.length;
 
-  // By category
-  const byCategory = {};
-  for (const p of products) {
-    if (!byCategory[p.category]) byCategory[p.category] = 0;
-    byCategory[p.category]++;
-  }
+  let totalRevenue = 0, totalCollected = 0;
+  const byCategory = {}, byPayment = {}, byChannel = {}, byNeighborhood = {}, byMonth = {}, ordersByDay = {};
+  const prodCounts = {}, prodRevenues = {};
 
-  // Orders by day (last 30)
-  const thirtyDaysAgo = new Date();
-  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-  const ordersByDay = {};
   for (const o of orders) {
+    const tp = Number(o.total_pedido) || 0;
+    const cr = Number(o.cobro_real) || 0;
+    totalRevenue += tp;
+    totalCollected += cr;
+
     if (o.fecha_pedido) {
-      if (!ordersByDay[o.fecha_pedido]) ordersByDay[o.fecha_pedido] = 0;
-      ordersByDay[o.fecha_pedido]++;
+      if (!ordersByDay[o.fecha_pedido]) ordersByDay[o.fecha_pedido] = { day: o.fecha_pedido, count: 0, revenue: 0 };
+      ordersByDay[o.fecha_pedido].count++;
+      ordersByDay[o.fecha_pedido].revenue += tp;
     }
-  }
 
-  // By barrio
-  const byBarrio = {};
-  for (const o of orders) {
-    const b = o.barrio || 'Sin barrio';
-    if (!byBarrio[b]) byBarrio[b] = 0;
-    byBarrio[b]++;
-  }
+    const barrio = o.barrio || 'Sin barrio';
+    if (!byNeighborhood[barrio]) byNeighborhood[barrio] = { name: barrio, count: 0, revenue: 0 };
+    byNeighborhood[barrio].count++;
+    byNeighborhood[barrio].revenue += tp;
 
-  // Revenue stats
-  let totalRevenue = 0, totalCobroReal = 0;
-  for (const o of orders) {
-    totalRevenue += Number(o.total_pedido) || 0;
-    totalCobroReal += Number(o.cobro_real) || 0;
-  }
+    const medio = o.medio_cobro || 'Sin medio';
+    if (!byPayment[medio]) byPayment[medio] = { name: medio, count: 0, revenue: 0 };
+    byPayment[medio].count++;
+    byPayment[medio].revenue += tp;
 
-  // By payment
-  const byPayment = {};
-  for (const o of orders) {
-    const m = o.medio_cobro || 'Sin medio';
-    if (!byPayment[m]) byPayment[m] = 0;
-    byPayment[m]++;
-  }
+    const canal = o.canal_venta || 'Sin canal';
+    if (!byChannel[canal]) byChannel[canal] = { name: canal, count: 0, revenue: 0 };
+    byChannel[canal].count++;
+    byChannel[canal].revenue += tp;
 
-  // By channel
-  const byChannel = {};
-  for (const o of orders) {
-    const c = o.canal_venta || 'Sin canal';
-    if (!byChannel[c]) byChannel[c] = 0;
-    byChannel[c]++;
-  }
-
-  // By neighborhood
-  const byNeighborhood = {};
-  for (const o of orders) {
-    const n = o.barrio || 'Sin barrio';
-    if (!byNeighborhood[n]) byNeighborhood[n] = 0;
-    byNeighborhood[n]++;
-  }
-
-  // By month
-  const byMonth = {};
-  for (const o of orders) {
     const date = o.fecha_pedido;
     if (date) {
       const month = date.substring(0, 7);
-      if (!byMonth[month]) byMonth[month] = 0;
-      byMonth[month]++;
+      if (!byMonth[month]) byMonth[month] = { name: month, count: 0, revenue: 0 };
+      byMonth[month].count++;
+      byMonth[month].revenue += tp;
+    }
+
+    for (let i = 1; i <= 7; i++) {
+      const name = o[`producto${i}`];
+      if (name && String(name).trim()) {
+        if (!prodCounts[name]) { prodCounts[name] = 0; prodRevenues[name] = 0; }
+        prodCounts[name]++;
+        prodRevenues[name] += Number(o[`valor_prod${i}`]) || 0;
+      }
     }
   }
 
+  for (const p of products) {
+    const key = `${p.category}::${p.list_type}`;
+    if (!byCategory[key]) byCategory[key] = { category: p.category, list_type: p.list_type, count: 0 };
+    byCategory[key].count++;
+  }
+
+  const avgOrder = orderCount > 0 ? totalRevenue / orderCount : 0;
+
   return {
     counts: {
-      products: prodCount, productsMinorista: prodMinorista, productsMayorista: prodMayorista,
+      products: prodCount, minorista: prodMinorista, mayorista: prodMayorista,
       categories: catCount, customers: customerCount, orders: orderCount,
-      payment_methods: paymentCount, sales_channels: channelCount, delivery_zones: zoneCount
+      revenue: totalRevenue, collected: totalCollected, avgOrder: Math.round(avgOrder * 100) / 100,
     },
-    byCategory: Object.entries(byCategory).map(([category, count]) => ({ category, count })),
-    ordersByDay: Object.entries(ordersByDay).map(([date, count]) => ({ date, count })).sort((a, b) => a.date.localeCompare(b.date)),
-    byBarrio: Object.entries(byBarrio).map(([barrio, count]) => ({ barrio, count })).sort((a, b) => b.count - a.count),
-    revenue: { total: totalRevenue, cobroReal: totalCobroReal },
-    byPayment: Object.entries(byPayment).map(([name, count]) => ({ name, count })),
-    byChannel: Object.entries(byChannel).map(([name, count]) => ({ name, count })),
-    byNeighborhood: Object.entries(byNeighborhood).map(([name, count]) => ({ name, count })).sort((a, b) => b.count - a.count),
-    byMonth: Object.entries(byMonth).map(([month, count]) => ({ month, count })).sort((a, b) => a.month.localeCompare(b.month)),
+    byCategory: Object.values(byCategory).sort((a, b) => b.count - a.count),
+    ordersByDay: Object.values(ordersByDay).sort((a, b) => b.day.localeCompare(a.day)).slice(0, 30),
+    topProducts: Object.entries(prodCounts).map(([name, count]) => ({ name, count, revenue: prodRevenues[name] })).sort((a, b) => b.count - a.count).slice(0, 10),
+    byPayment: Object.values(byPayment).sort((a, b) => b.revenue - a.revenue),
+    byChannel: Object.values(byChannel).sort((a, b) => b.count - a.count),
+    byNeighborhood: Object.values(byNeighborhood).sort((a, b) => b.count - a.count).slice(0, 15),
+    byMonth: Object.values(byMonth).sort((a, b) => a.name.localeCompare(b.name)),
   };
 }

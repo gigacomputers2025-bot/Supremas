@@ -19,21 +19,24 @@ export default function EstadisticasPanel() {
 
   const money = (n) => `$${(n || 0).toLocaleString('es-AR')}`;
 
-  const MiniBar = ({ value, max, color = '#3b82f6', label }) => (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-      <span style={{ fontSize: 11, color: '#c8c9d0', minWidth: 120, textAlign: 'right' }}>{label}</span>
-      <div style={{ flex: 1, background: '#23252e', borderRadius: 4, height: 16, overflow: 'hidden' }}>
-        <div style={{
-          width: `${Math.min((value / max) * 100, 100)}%`,
-          height: '100%',
-          background: color,
-          borderRadius: 4,
-          transition: 'width 0.5s',
-        }} />
+  const MiniBar = ({ value, max, color = '#3b82f6', label, width: w }) => {
+    const pct = w != null ? w : (value / (max || 1)) * 100;
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+        <span style={{ fontSize: 11, color: '#c8c9d0', minWidth: 120, textAlign: 'right' }}>{label}</span>
+        <div style={{ flex: 1, background: '#23252e', borderRadius: 4, height: 16, overflow: 'hidden' }}>
+          <div style={{
+            width: `${Math.min(pct, 100)}%`,
+            height: '100%',
+            background: color,
+            borderRadius: 4,
+            transition: 'width 0.5s',
+          }} />
+        </div>
+        <span style={{ fontSize: 11, color: '#9ca3af', minWidth: 60, textAlign: 'right' }}>{value}</span>
       </div>
-      <span style={{ fontSize: 11, color: '#9ca3af', minWidth: 60, textAlign: 'right' }}>{value}</span>
-    </div>
-  );
+    );
+  };
 
   return (
     <div>
@@ -83,20 +86,20 @@ export default function EstadisticasPanel() {
         {/* Revenue by Payment Method */}
         <div className="card">
           <h3 style={{ fontSize: 14, color: '#e0e1e6', marginBottom: 12 }}>💳 Ingresos por Medio de Cobro</h3>
-          {byPayment.length === 0 ? <p style={{ color: '#6b6d7b', fontSize: 13 }}>Sin datos</p> : (
-            byPayment.map((p, i) => {
-              const maxRev = byPayment[0]?.revenue || 1;
-              return (
-                <MiniBar
-                  key={i}
-                  label={p.name || '—'}
-                  value={money(p.revenue)}
-                  max={money(maxRev)}
-                  color={['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ef4444', '#ec4899'][i]}
-                />
-              );
-            })
-          )}
+              {byPayment.length === 0 ? <p style={{ color: '#6b6d7b', fontSize: 13 }}>Sin datos</p> : (
+                byPayment.map((p, i) => {
+                  const maxRev = byPayment[0]?.revenue || 1;
+                  return (
+                    <MiniBar
+                      key={i}
+                      label={p.name || '—'}
+                      value={money(p.revenue)}
+                      width={p.revenue / maxRev * 100}
+                      color={['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ef4444', '#ec4899'][i]}
+                    />
+                  );
+                })
+              )}
         </div>
       </div>
 
@@ -104,38 +107,38 @@ export default function EstadisticasPanel() {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
         <div className="card">
           <h3 style={{ fontSize: 14, color: '#e0e1e6', marginBottom: 12 }}>📢 Pedidos por Canal</h3>
-          {byChannel.length === 0 ? <p style={{ color: '#6b6d7b', fontSize: 13 }}>Sin datos</p> : (
-            byChannel.map((c, i) => {
-              const maxCnt = byChannel[0]?.count || 1;
-              return (
-                <MiniBar
-                  key={i}
-                  label={c.name || '—'}
-                  value={`${c.count} (${money(c.revenue)})`}
-                  max={maxCnt}
-                  color={['#3b82f6', '#f59e0b', '#10b981', '#8b5cf6', '#ef4444'][i]}
-                />
-              );
-            })
-          )}
+              {byChannel.length === 0 ? <p style={{ color: '#6b6d7b', fontSize: 13 }}>Sin datos</p> : (
+                byChannel.map((c, i) => {
+                  const maxCnt = byChannel[0]?.count || 1;
+                  return (
+                    <MiniBar
+                      key={i}
+                      label={c.name || '—'}
+                      value={`${c.count} (${money(c.revenue)})`}
+                      width={c.count / maxCnt * 100}
+                      color={['#3b82f6', '#f59e0b', '#10b981', '#8b5cf6', '#ef4444'][i]}
+                    />
+                  );
+                })
+              )}
         </div>
 
         <div className="card">
           <h3 style={{ fontSize: 14, color: '#e0e1e6', marginBottom: 12 }}>📍 Pedidos por Barrio</h3>
-          {byNeighborhood.length === 0 ? <p style={{ color: '#6b6d7b', fontSize: 13 }}>Sin datos</p> : (
-            byNeighborhood.map((n, i) => {
-              const maxCnt = byNeighborhood[0]?.count || 1;
-              return (
-                <MiniBar
-                  key={i}
-                  label={n.name || '—'}
-                  value={`${n.count} (${money(n.revenue)})`}
-                  max={maxCnt}
-                  color={['#14b8a6', '#8b5cf6', '#f97316', '#ec4899', '#84cc16', '#6366f1'][i]}
-                />
-              );
-            })
-          )}
+              {byNeighborhood.length === 0 ? <p style={{ color: '#6b6d7b', fontSize: 13 }}>Sin datos</p> : (
+                byNeighborhood.map((n, i) => {
+                  const maxCnt = byNeighborhood[0]?.count || 1;
+                  return (
+                    <MiniBar
+                      key={i}
+                      label={n.name || '—'}
+                      value={`${n.count} (${money(n.revenue)})`}
+                      width={n.count / maxCnt * 100}
+                      color={['#14b8a6', '#8b5cf6', '#f97316', '#ec4899', '#84cc16', '#6366f1'][i]}
+                    />
+                  );
+                })
+              )}
         </div>
       </div>
 
