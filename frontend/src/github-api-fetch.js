@@ -61,7 +61,7 @@ export async function githubApiFetch(url, options) {
 
       // Handle query params
       const queryIdx = url.indexOf('?');
-      const params = queryIdx >= 0 ? new URLSearchParams(url.slice(queryIdx)) : new URLSearchParams();
+      const params = new URLSearchParams(queryIdx >= 0 ? url.slice(queryIdx) : '');
 
       if (resource === 'orders') {
         const all = await getAll(table);
