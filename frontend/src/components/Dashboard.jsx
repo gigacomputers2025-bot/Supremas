@@ -24,7 +24,7 @@ export default function Dashboard() {
   const toast = useToast();
   const { connected, checking } = useServerStatus();
 
-  const hiddenTabs = mode === 'orders' ? ALL_TABS_KEYS.filter(k => k !== 'orders') : ['orders'];
+  const hiddenTabs = mode === 'orders' ? ALL_TABS_KEYS.filter(k => k !== 'orders') : [];
   const currentTab = mode === 'orders' ? 'orders' : activeTab;
 
   const handleBackHome = () => {
