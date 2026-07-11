@@ -51,6 +51,16 @@ export default function ProductsPanel() {
     }
   }, [products]);
 
+  const handleSavePrice = useCallback(async (productId, priceListId, value) => {
+    try {
+      await fetch(`${API}/${productId}/price`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ priceListId, price: Number(value) || 0 })
+      });
+    } catch { toast.error('Error al guardar precio'); }
+  }, []);
+
   const deleteProduct = useCallback(async (id) => {
     if (!confirm('¿Eliminar este producto?')) return;
     try {
@@ -123,9 +133,7 @@ export default function ProductsPanel() {
                   return (
                     <td key={i}>
                       {priceItem ? (
-                        <span style={{ display: 'block', textAlign: 'right', padding: '4px 4px', fontSize: 12, color: '#e0e1e6' }}>
-                          ${Number(priceItem.price).toLocaleString('es-AR')}
-                        </span>
+                        <InlineEdit value={String(priceItem.price)} onSave={v => handleSavePrice(product.id, priceItem.id, v)} style={{ textAlign: 'right' }} />
                       ) : (
                         <span style={{ color: '#3a3c48' }}>—</span>
                       )}
@@ -214,8 +222,8 @@ function ProductForm({ allProducts, priceLabels, listType, onClose }) {
   const inputStyle = { width: '100%', padding: '6px 8px' };
 
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-      <div style={{ background: '#121318', borderRadius: 10, padding: 24, maxWidth: 600, width: '90%', border: '1px solid #1e2029', boxShadow: '0 20px 60px rgba(0,0,0,0.5)', maxHeight: '90vh', overflowY: 'auto' }}>
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }} onClick={onClose}>
+      <div style={{ background: '#121318', borderRadius: 10, padding: 24, maxWidth: 600, width: '90%', border: '1px solid #1e2029', boxShadow: '0 20px 60px rgba(0,0,0,0.5)', maxHeight: '90vh', overflowY: 'auto' }} onClick={e => e.stopPropagation()}>
         <h2 style={{ fontSize: 18, marginBottom: 16, color: '#e8e9ed' }}>Nuevo Producto</h2>
         <form onSubmit={handleSubmit}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>

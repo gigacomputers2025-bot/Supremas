@@ -144,8 +144,8 @@ function CustomerForm({ customer, onClose }) {
   const inputStyle = { width: '100%', padding: '6px 8px' };
 
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-      <div style={{ background: '#121318', borderRadius: 10, padding: 24, maxWidth: 500, width: '90%', border: '1px solid #1e2029', boxShadow: '0 20px 60px rgba(0,0,0,0.5)' }}>
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }} onClick={onClose}>
+      <div style={{ background: '#121318', borderRadius: 10, padding: 24, maxWidth: 500, width: '90%', border: '1px solid #1e2029', boxShadow: '0 20px 60px rgba(0,0,0,0.5)' }} onClick={e => e.stopPropagation()}>
         <h2 style={{ fontSize: 18, marginBottom: 16, color: '#e8e9ed' }}>{customer ? 'Editar Cliente' : 'Nuevo Cliente'}</h2>
         <form onSubmit={handleSubmit}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
