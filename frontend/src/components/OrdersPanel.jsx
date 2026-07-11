@@ -379,12 +379,12 @@ function OrderForm({ order, onClose, channels, payments, barrios, labels, delive
               </select>
             </div>
             <div>
-              <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Fecha Pedido</label>
-              <input style={{ ...inputStyle, color: '#ef4444', fontWeight: 600 }} type="date" value={form.fecha_pedido} onChange={e => set('fecha_pedido', e.target.value)} />
+              <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style={{ marginRight: 4, verticalAlign: 'middle' }}><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Fecha Pedido</label>
+              <input style={{ ...inputStyle, color: '#f97316', fontWeight: 600 }} type="date" value={form.fecha_pedido} onChange={e => set('fecha_pedido', e.target.value)} />
             </div>
             <div>
-              <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Fecha Entrega</label>
-              <input style={{ ...inputStyle, color: '#ef4444', fontWeight: 600 }} type="date" value={form.fecha_entrega} onChange={e => set('fecha_entrega', e.target.value)} />
+              <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style={{ marginRight: 4, verticalAlign: 'middle' }}><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Fecha Entrega</label>
+              <input style={{ ...inputStyle, color: '#f97316', fontWeight: 600 }} type="date" value={form.fecha_entrega} onChange={e => set('fecha_entrega', e.target.value)} />
             </div>
             <div>
               <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Lista Precio</label>
