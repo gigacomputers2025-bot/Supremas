@@ -130,7 +130,7 @@ export default function OrdersPanel() {
       </div>
 
       <div style={{ overflowX: 'auto' }}>
-        <table style={{ minWidth: 1500, fontSize: 12 }}>
+        <table style={{ fontSize: 12 }}>
           <thead>
             <tr>
               <th style={{ width: 40 }}>#</th>
