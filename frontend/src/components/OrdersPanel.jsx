@@ -129,7 +129,7 @@ export default function OrdersPanel() {
         <button className="btn-success" onClick={() => { setEditOrder(null); setShowForm(true); }}>+ Nuevo Pedido</button>
       </div>
 
-      <div style={{ overflowX: 'auto', maxHeight: '52vh', overflowY: 'auto' }}>
+      <div style={{ overflowX: 'auto' }}>
         <table style={{ minWidth: 1500, fontSize: 12 }}>
           <thead>
             <tr>
