@@ -307,7 +307,7 @@ function OrderForm({ order, onClose, channels, payments, barrios, labels, delive
     }
   };
 
-  const inputStyle = { width: '100%', padding: '6px 8px' };
+  const inputStyle = { width: '100%', padding: '6px 8px', background: '#1e2029', border: '1px solid #2a2c38', borderRadius: 6, color: '#e8e9ed' };
 
   return (
     <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }} onClick={onClose}>
@@ -380,11 +380,11 @@ function OrderForm({ order, onClose, channels, payments, barrios, labels, delive
             </div>
             <div>
               <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Fecha Pedido</label>
-              <input style={inputStyle} type="date" value={form.fecha_pedido} onChange={e => set('fecha_pedido', e.target.value)} />
+              <input style={{ ...inputStyle, color: '#ef4444', fontWeight: 600 }} type="date" value={form.fecha_pedido} onChange={e => set('fecha_pedido', e.target.value)} />
             </div>
             <div>
               <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Fecha Entrega</label>
-              <input style={inputStyle} type="date" value={form.fecha_entrega} onChange={e => set('fecha_entrega', e.target.value)} />
+              <input style={{ ...inputStyle, color: '#ef4444', fontWeight: 600 }} type="date" value={form.fecha_entrega} onChange={e => set('fecha_entrega', e.target.value)} />
             </div>
             <div>
               <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Lista Precio</label>
