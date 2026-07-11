@@ -27,6 +27,20 @@ export async function githubApiFetch(url, options) {
     });
   }
 
+  // Recuento
+  if (resource === 'recuento') {
+    return new Response(JSON.stringify(await computeRecuento()), {
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
+
+  // Envios
+  if (resource === 'envios') {
+    return new Response(JSON.stringify(await computeEnvios()), {
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
+
   // Stats
   if (resource === 'stats') {
     return new Response(JSON.stringify(await computeStats()), {
@@ -34,9 +48,8 @@ export async function githubApiFetch(url, options) {
     });
   }
 
-  // Excel/seed/recuento/envios/backups - not fully supported on GitHub Pages
-  if (['excel', 'seed', 'recuento', 'envios', 'backups'].includes(resource)) {
-    const msg = resource === 'recuento' || resource === 'envios' ? 'feature' : 'function';
+  // Excel/seed/backups - not fully supported on GitHub Pages
+  if (['excel', 'seed', 'backups'].includes(resource)) {
     throw new Error(`${resource} solo disponible en modo local`);
   }
 
@@ -252,4 +265,107 @@ async function computeStats() {
     byNeighborhood: Object.values(byNeighborhood).sort((a, b) => b.count - a.count).slice(0, 15),
     byMonth: Object.values(byMonth).sort((a, b) => a.name.localeCompare(b.name)),
   };
+}
+
+async function computeRecuento() {
+  const orders = await getAll('orders');
+  const datesSet = new Set();
+  const dateProductMap = {};
+  const allProductNames = new Set();
+
+  for (const order of orders) {
+    const date = order.fecha_entrega;
+    if (!date || !String(date).trim()) continue;
+    datesSet.add(date);
+    if (!dateProductMap[date]) dateProductMap[date] = {};
+    for (let i = 1; i <= 7; i++) {
+      const name = order[`producto${i}`];
+      if (name && String(name).trim()) {
+        const key = name.trim();
+        if (!dateProductMap[date][key]) dateProductMap[date][key] = 0;
+        dateProductMap[date][key]++;
+        allProductNames.add(key);
+      }
+    }
+  }
+
+  const productNames = [...allProductNames].sort();
+  const dates = [...datesSet].sort().slice(-7);
+
+  const data = dates.map(date => {
+    const map = dateProductMap[date] || {};
+    const items = productNames.filter(p => map[p]).map(p => ({ product: p, count: map[p] }));
+    return { date, items };
+  });
+
+  return { dates, products: productNames, data };
+}
+
+async function computeEnvios() {
+  const zones = await getAll('delivery_zones');
+  const orders = await getAll('orders');
+
+  const barrioMap = {};
+  for (const z of zones) {
+    const key = (z.neighborhood || '').trim().toLowerCase();
+    if (key) barrioMap[key] = z.deliverer;
+  }
+
+  const resolveDeliverer = (barrio) => {
+    if (!barrio) return 'SIN ASIGNAR';
+    return barrioMap[barrio.trim().toLowerCase()] || 'SIN ASIGNAR';
+  };
+
+  const datesSet = new Set();
+  for (const o of orders) {
+    if (o.fecha_entrega && String(o.fecha_entrega).trim()) datesSet.add(o.fecha_entrega);
+  }
+  const dates = [...datesSet].sort().slice(-5);
+
+  const allDeliverers = new Set();
+  const allProducts = new Set();
+  const data = {};
+
+  for (const order of orders) {
+    if (!dates.includes(order.fecha_entrega)) continue;
+    const date = order.fecha_entrega;
+    const deliverer = resolveDeliverer(order.barrio);
+    allDeliverers.add(deliverer);
+    if (!data[date]) data[date] = {};
+    if (!data[date][deliverer]) data[date][deliverer] = {};
+    for (let i = 1; i <= 7; i++) {
+      const name = order[`producto${i}`];
+      if (name && String(name).trim()) {
+        const key = name.trim();
+        if (!data[date][deliverer][key]) data[date][deliverer][key] = 0;
+        data[date][deliverer][key]++;
+        allProducts.add(key);
+      }
+    }
+  }
+
+  const deliverers = [...allDeliverers].sort();
+  const products = [...allProducts].sort();
+
+  const result = {};
+  for (const date of dates) {
+    result[date] = {};
+    for (const del of deliverers) {
+      const map = data[date]?.[del] || {};
+      result[date][del] = products.filter(p => map[p]).map(p => ({ product: p, count: map[p] }));
+    }
+  }
+
+  const totals = {};
+  for (const del of deliverers) {
+    totals[del] = {};
+    for (const date of dates) {
+      for (const item of result[date]?.[del] || []) {
+        if (!totals[del][item.product]) totals[del][item.product] = 0;
+        totals[del][item.product] += item.count;
+      }
+    }
+  }
+
+  return { dates, deliverers, products, data: result, totals };
 }
