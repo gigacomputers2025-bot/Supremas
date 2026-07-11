@@ -19,7 +19,8 @@ async function fetchFile(table) {
     if (!res.ok) throw new Error(`GitHub API: ${res.status}`);
     const data = await res.json();
     shaCache[table] = data.sha;
-    const decoded = JSON.parse(atob(data.content));
+    const bytes = Uint8Array.from(atob(data.content), c => c.charCodeAt(0));
+    const decoded = JSON.parse(new TextDecoder().decode(bytes));
     cache[table] = decoded;
     return decoded;
   } catch (e) {
