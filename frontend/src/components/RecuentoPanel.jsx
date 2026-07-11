@@ -30,8 +30,8 @@ export default function RecuentoPanel() {
         Productos Necesarios para Próximas Entregas
       </h2>
 
-      <div style={{ overflowX: 'auto', maxHeight: '70vh', overflowY: 'auto' }}>
-        <table style={{ minWidth: 600 }}>
+      <div style={{ overflowX: 'auto' }}>
+        <table>
           <thead>
             <tr>
               <th style={{ width: 30 }}>#</th>

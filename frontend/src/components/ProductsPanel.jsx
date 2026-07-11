@@ -99,8 +99,8 @@ export default function ProductsPanel() {
         <button className="btn-primary" onClick={() => setShowForm(true)}>+ Nuevo Producto</button>
       </div>
 
-      <div style={{ overflowX: 'auto', maxHeight: '65vh', overflowY: 'auto' }}>
-        <table style={{ minWidth: 800 }}>
+      <div style={{ overflowX: 'auto' }}>
+        <table>
           <thead>
             <tr>
               <th style={{ width: 30 }}>#</th>

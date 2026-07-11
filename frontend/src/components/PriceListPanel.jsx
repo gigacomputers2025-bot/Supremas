@@ -82,8 +82,8 @@ export default function PriceListPanel() {
         <button className="btn-primary" onClick={() => setShowManage(true)}>Gestionar Listas</button>
       </div>
 
-      <div style={{ overflowX: 'auto', maxHeight: '70vh', overflowY: 'auto' }}>
-        <table style={{ minWidth: 600 }}>
+      <div style={{ overflowX: 'auto' }}>
+        <table>
           <thead>
             <tr>
               <th style={{ width: 30 }}>#</th>

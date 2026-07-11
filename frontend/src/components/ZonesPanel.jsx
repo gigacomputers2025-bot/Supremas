@@ -90,7 +90,7 @@ export default function ZonesPanel() {
         <span style={{ fontSize: 12, color: '#6b6d7b', whiteSpace: 'nowrap' }}>{filtered.length} / {zones.length} zonas</span>
         <button className="btn-primary" onClick={add}>+ Nueva Zona</button>
       </div>
-      <div style={{ overflowX: 'auto', maxHeight: '55vh', overflowY: 'auto' }}>
+      <div style={{ overflowX: 'auto' }}>
         <table>
           <thead>
             <tr>

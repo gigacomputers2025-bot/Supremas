@@ -69,8 +69,8 @@ export default function CustomersPanel() {
         <button className="btn-success" onClick={() => { setEditCust(null); setShowForm(true); }}>+ Nuevo Cliente</button>
       </div>
 
-      <div style={{ overflowX: 'auto', maxHeight: '55vh', overflowY: 'auto' }}>
-        <table style={{ minWidth: 700 }}>
+      <div style={{ overflowX: 'auto' }}>
+        <table>
           <thead>
             <tr>
               <th style={{ width: 30 }}>#</th>

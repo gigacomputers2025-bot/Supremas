@@ -99,7 +99,7 @@ export default function RepartidoresPanel() {
         <span style={{ fontSize: 12, color: '#6b6d7b', whiteSpace: 'nowrap' }}>{filtered.length} / {repartidores.length} repartidores</span>
         <button className="btn-primary" onClick={add}>+ Nuevo Repartidor</button>
       </div>
-      <div style={{ overflowX: 'auto', maxHeight: '55vh', overflowY: 'auto' }}>
+      <div style={{ overflowX: 'auto' }}>
         <table>
           <thead>
             <tr>
