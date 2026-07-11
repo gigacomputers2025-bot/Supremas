@@ -58,12 +58,6 @@ export async function githubApiFetch(url, options) {
   const fullUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/data/${table}.json`;
 
   try {
-    if (method === 'GET' && url.includes('search')) {
-      return new Response(JSON.stringify({ orders: [], total: 0 }), {
-        headers: { 'Content-Type': 'application/json' }
-      });
-    }
-
     if (method === 'GET' && id) {
       const record = await getById(table, id);
       return new Response(JSON.stringify(record), { headers: { 'Content-Type': 'application/json' } });
