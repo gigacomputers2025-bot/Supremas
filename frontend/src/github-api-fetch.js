@@ -22,7 +22,10 @@ export async function githubApiFetch(url, options) {
 
   // Health check for backup endpoint
   if (resource === 'backups' && parts[1] === 'health') {
-    return new Response(JSON.stringify({ status: 'ok', mode: 'github-pages' }), {
+    return new Response(JSON.stringify({
+      mode: 'github-pages', totalBackups: 0,
+      config: { autoBackupInterval: '30', autoBackupRetention: '20' }
+    }), {
       headers: { 'Content-Type': 'application/json' }
     });
   }
