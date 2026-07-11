@@ -266,6 +266,26 @@ function OrderForm({ order, onClose, channels, payments, barrios, labels, delive
     set('barrio', customer.barrio || '');
   };
 
+  const handleCreateCustomer = async () => {
+    const name = form.cliente?.trim();
+    if (!name) { toast.warning('Escribí un nombre primero'); return; }
+    try {
+      const res = await fetch(`${API_BASE}/api/customers`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name, dni: form.dni, celular: form.celular,
+          calle: form.calle, altura: form.altura,
+          piso_dto: form.piso_dto, barrio: form.barrio
+        })
+      });
+      if (!res.ok) throw new Error();
+      const customer = await res.json();
+      toast.success(`Cliente "${customer.name}" creado`);
+      handleSelectCustomer(customer);
+    } catch { toast.error('Error al crear cliente'); }
+  };
+
   const handleSelectProduct = (product, index) => {
     set(`producto${index}`, product.name);
   };
@@ -295,15 +315,20 @@ function OrderForm({ order, onClose, channels, payments, barrios, labels, delive
         <h2 style={{ fontSize: 18, marginBottom: 16, color: '#e8e9ed' }}>{order ? 'Editar Pedido' : 'Nuevo Pedido'}</h2>
         <form onSubmit={handleSubmit}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 10, marginBottom: 16 }}>
-            <div style={{ gridColumn: 'span 2' }}>
-              <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Cliente *</label>
-              <AutocompleteInput
-                value={form.cliente}
-                onChange={v => set('cliente', v)}
-                onSelect={handleSelectCustomer}
-                fetchOptions={searchCustomers}
-                placeholder="Buscar y seleccionar cliente..."
-              />
+            <div style={{ gridColumn: 'span 2', display: 'flex', gap: 6, alignItems: 'flex-end' }}>
+              <div style={{ flex: 1 }}>
+                <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>Cliente *</label>
+                <AutocompleteInput
+                  value={form.cliente}
+                  onChange={v => set('cliente', v)}
+                  onSelect={handleSelectCustomer}
+                  fetchOptions={searchCustomers}
+                  placeholder="Buscar y seleccionar cliente..."
+                />
+              </div>
+              <button type="button" onClick={handleCreateCustomer} title="Crear nuevo cliente" style={{ background: '#16a34a', color: 'white', padding: '6px 12px', fontSize: 16, fontWeight: 700, borderRadius: 6, whiteSpace: 'nowrap' }}>
+                + Nuevo
+              </button>
             </div>
             <div>
               <label style={{ fontSize: 11, fontWeight: 600, color: '#9ca3af' }}>DNI</label>
